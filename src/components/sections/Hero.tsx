@@ -20,7 +20,26 @@ export function Hero() {
     let currentLoaded = 0;
 
     const loadImages = async () => {
-      for (let i = 1; i <= maxFrames; i++) {
+      // Load first frame immediately to unblock rendering
+      const firstImg = new window.Image();
+      firstImg.src = `/images/hero-frames/frame_0001.jpg`;
+      
+      await new Promise<void>((resolve) => {
+        firstImg.onload = () => {
+          loadedImages.push(firstImg);
+          resolve();
+        };
+        firstImg.onerror = () => resolve();
+      });
+
+      if (active && loadedImages.length > 0) {
+        setImages([...loadedImages]);
+        setLoaded(true);
+        drawFrame(loadedImages[0]);
+      }
+
+      // Load the rest asynchronously without blocking
+      for (let i = 2; i <= maxFrames; i++) {
         if (!active) break;
         
         const img = new window.Image();
@@ -33,24 +52,22 @@ export function Hero() {
             currentLoaded++;
             if (currentLoaded % 10 === 0) {
               setLoadProgress(Math.round((currentLoaded / maxFrames) * 100));
+              // Periodically flush loaded images to state so scroll works
+              if (active) setImages([...loadedImages]);
             }
             resolve();
           };
           img.onerror = () => {
-            // If a frame fails, just push the last successful frame or wait
-            loadedImages.push(loadedImages.length > 0 ? loadedImages[loadedImages.length - 1] : img);
+            loadedImages.push(loadedImages[loadedImages.length - 1]);
             currentLoaded++;
             resolve();
           };
         });
-
-        // Loop continues until maxFrames is reached, even if one errored
       }
       
-      if (active && loadedImages.length > 0) {
-        setImages(loadedImages);
-        setLoaded(true);
-        drawFrame(loadedImages[0]);
+      // Final flush
+      if (active) {
+        setImages([...loadedImages]);
       }
     };
 
