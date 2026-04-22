@@ -68,7 +68,10 @@ export function Experiences() {
                 </p>
               </div>
               <div className="mt-auto pt-8">
-                <button className="w-full py-4 border border-text-light/20 hover:bg-text-light hover:text-bg-deep transition-colors duration-300 font-sans uppercase text-xs tracking-widest rounded text-accent-gold hover:border-text-light">
+                <button 
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="w-full py-4 border border-text-light/20 hover:bg-text-light hover:text-bg-deep transition-colors duration-300 font-sans uppercase text-xs tracking-widest rounded text-accent-gold hover:border-text-light cursor-pointer"
+                >
                   {t(`cards.${card}.cta`)}
                 </button>
               </div>
