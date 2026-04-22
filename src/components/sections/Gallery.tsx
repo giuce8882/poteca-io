@@ -76,7 +76,7 @@ export function Gallery() {
         </motion.div>
 
         {/* Masonry-style Grid */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className="columns-1 md:columns-2 gap-12 lg:gap-24 space-y-12 lg:space-y-24 max-w-[1100px] mx-auto">
           {GALLERY_IMAGES.map((src, index) => (
             <motion.div
               key={index}

@@ -17,7 +17,7 @@ export function ParallaxImage({ src, alt }: { src: string; alt: string }) {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.08]);
 
   return (
-    <section ref={containerRef} className="relative w-full h-[60vh] md:h-[75vh] overflow-hidden">
+    <section ref={containerRef} className="relative w-full h-[80vh] md:h-screen overflow-hidden">
       <motion.div style={{ y, scale }} className="absolute inset-[-15%] w-[130%] h-[130%] z-0">
         <Image
           src={src}

@@ -63,8 +63,8 @@ export function Contact() {
               <input 
                 id="contact-name"
                 type="text" 
-                className="w-full bg-transparent border-b border-text-light/20 focus:border-accent-gold py-4 outline-none font-serif text-lg text-text-light transition-colors duration-300"
-                placeholder="First Last" 
+                className="w-full bg-transparent border-b border-text-light/10 focus:border-accent-gold py-6 outline-none font-serif text-2xl md:text-3xl text-text-light opacity-70 focus:opacity-100 transition-all duration-500 placeholder-text-light/20"
+                placeholder="..." 
               />
             </div>
             <div className="flex flex-col gap-2 mt-4">
@@ -72,17 +72,17 @@ export function Contact() {
               <input 
                 id="contact-email"
                 type="text" 
-                className="w-full bg-transparent border-b border-text-light/20 focus:border-accent-gold py-4 outline-none font-serif text-lg text-text-light transition-colors duration-300"
-                placeholder="hello@example.com" 
+                className="w-full bg-transparent border-b border-text-light/10 focus:border-accent-gold py-6 outline-none font-serif text-2xl md:text-3xl text-text-light opacity-70 focus:opacity-100 transition-all duration-500 placeholder-text-light/20"
+                placeholder="..." 
               />
             </div>
             <div className="flex flex-col gap-2 mt-4">
               <label htmlFor="contact-message" className="font-sans text-xs uppercase tracking-widest text-text-muted">{t("form.message")}</label>
               <textarea 
                 id="contact-message"
-                rows={5}
-                className="w-full bg-transparent border-b border-text-light/20 focus:border-accent-gold py-4 outline-none font-serif text-lg text-text-light transition-colors duration-300 resize-none"
-                placeholder="I would love to explore..." 
+                rows={3}
+                className="w-full bg-transparent border-b border-text-light/10 focus:border-accent-gold py-6 outline-none font-serif text-2xl md:text-3xl text-text-light opacity-70 focus:opacity-100 transition-all duration-500 resize-none placeholder-text-light/20"
+                placeholder="..." 
               />
             </div>
             <div className="mt-8">

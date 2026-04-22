@@ -42,6 +42,16 @@
   --font-serif: var(--font-cormorant);
   --font-body: var(--font-lora);
   --font-sans: var(--font-outfit);
+
+  /* Font Sizes - Bumped up for effortless reading */
+  --text-hero: clamp(3rem, 7vw, 6.5rem);
+  --text-h1: clamp(2.5rem, 5vw, 4rem);
+  --text-h2: clamp(1.8rem, 3.5vw, 2.5rem);
+  --text-h3: clamp(1.4rem, 2.5vw, 1.8rem);
+  --text-body-lg: clamp(1.25rem, 2vw, 1.5rem);
+  --text-body: 1.125rem;
+  --text-small: 0.95rem;
+  --text-label: 0.85rem;
 }
 
 :root {
