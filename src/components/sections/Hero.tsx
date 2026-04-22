@@ -16,7 +16,7 @@ export function Hero() {
   useEffect(() => {
     let active = true;
     const loadedImages: HTMLImageElement[] = [];
-    const maxFrames = 518;
+    const maxFrames = 207;
     let currentLoaded = 0;
 
     const loadImages = async () => {
@@ -32,17 +32,22 @@ export function Hero() {
             loadedImages.push(img);
             currentLoaded++;
             if (currentLoaded % 10 === 0) {
-              setLoadProgress(Math.round((currentLoaded / 518) * 100));
+              setLoadProgress(Math.round((currentLoaded / maxFrames) * 100));
             }
             resolve();
           };
-          img.onerror = () => resolve();
+          img.onerror = () => {
+            // If a frame fails, just push the last successful frame or wait
+            loadedImages.push(loadedImages.length > 0 ? loadedImages[loadedImages.length - 1] : img);
+            currentLoaded++;
+            resolve();
+          };
         });
 
-        if (loadedImages.length < i) break;
+        // Loop continues until maxFrames is reached, even if one errored
       }
       
-      if (active) {
+      if (active && loadedImages.length > 0) {
         setImages(loadedImages);
         setLoaded(true);
         drawFrame(loadedImages[0]);
