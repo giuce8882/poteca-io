@@ -18,57 +18,53 @@ export function Hero() {
     const loadedImages: HTMLImageElement[] = [];
     const maxFrames = 207;
     let currentLoaded = 0;
-
-    const loadImages = async () => {
-      // Load first frame immediately to unblock rendering
-      const firstImg = new window.Image();
-      firstImg.src = `/images/hero-frames/frame_0001.jpg`;
-      
-      await new Promise<void>((resolve) => {
-        firstImg.onload = () => {
-          loadedImages.push(firstImg);
-          resolve();
-        };
-        firstImg.onerror = () => resolve();
-      });
-
-      if (active && loadedImages.length > 0) {
-        setImages([...loadedImages]);
-        setLoaded(true);
-        drawFrame(loadedImages[0]);
+    
+    const loadImages = () => {
+      const promises: Promise<void>[] = [];
+      const tempImages: HTMLImageElement[] = [];
+      // To ensure correct order later, we will pre-fill the array
+      for (let i = 0; i < maxFrames; i++) {
+        tempImages.push(new window.Image());
       }
 
-      // Load the rest asynchronously without blocking
-      for (let i = 2; i <= maxFrames; i++) {
+      for (let i = 1; i <= maxFrames; i++) {
         if (!active) break;
         
-        const img = new window.Image();
         const paddedIndex = i.toString().padStart(4, '0');
-        img.src = `/images/hero-frames/frame_${paddedIndex}.jpg`;
+        const img = tempImages[i - 1];
         
-        await new Promise<void>((resolve) => {
+        const p = new Promise<void>((resolve) => {
           img.onload = () => {
-            loadedImages.push(img);
             currentLoaded++;
             if (currentLoaded % 10 === 0) {
               setLoadProgress(Math.round((currentLoaded / maxFrames) * 100));
-              // Periodically flush loaded images to state so scroll works
-              if (active) setImages([...loadedImages]);
             }
             resolve();
           };
           img.onerror = () => {
-            loadedImages.push(loadedImages[loadedImages.length - 1]);
             currentLoaded++;
-            resolve();
+            resolve(); // Treat as loaded to not block forever
           };
+          // Setting src triggers the concurrent network request
+          img.src = `/images/hero-frames/frame_${paddedIndex}.jpg`;
         });
+        
+        promises.push(p);
       }
-      
-      // Final flush
-      if (active) {
-        setImages([...loadedImages]);
-      }
+
+      // Wait for all frames to load (concurrently!)
+      Promise.all(promises).then(() => {
+        if (!active) return;
+        
+        // Filter out any broken images for safety
+        const validImages = tempImages.filter((img) => img.naturalWidth !== 0);
+        
+        setImages(validImages);
+        setLoaded(true);
+        if (validImages.length > 0) {
+          drawFrame(validImages[0]);
+        }
+      });
     };
 
     loadImages();
