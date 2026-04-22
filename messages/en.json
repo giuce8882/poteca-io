@@ -1,0 +1,139 @@
+{
+  "Nav": {
+    "story": "The Story",
+    "healingTrail": "Healing Trail",
+    "benefits": "Benefits",
+    "experiences": "Experiences",
+    "contact": "Contact",
+    "gallery": "Gallery"
+  },
+  "Hero": {
+    "label": "Healing Nature Trail",
+    "headline": "Welcome to <highlight>my trail</highlight>",
+    "subtitle": "Luncani Plateau, Târsa. A journey toward yourself, with the help of nature.",
+    "cta1": "Explore the Trail",
+    "cta2": "The Story",
+    "scroll": "Discover the trail"
+  },
+  "Story": {
+    "label": "ABOUT ME",
+    "title": "I am the trail",
+    "body1": "My name is Oana. I'm a mother of two wild boys aged 7 and 10, and I've been dancing with the energy of entrepreneurship for over 20 years.",
+    "body2": "The motto that has carried me through everything has always been the same: \"Don't go where the path may lead — go where there is no path and leave a trail.\"",
+    "body3": "And that's exactly what I did. I left trails through industries that people said were impossible — from building Europe's first hemp seed processing factory, to hemp-and-lime construction, a forest kindergarten, a free democratic school, and organic agriculture.",
+    "body4": "Tourism, real estate, food industry, alternative education, construction — each experience was a new trail. And now, 20 years later, I've realized: all these trails form a single one. It's my life.",
+    "body5": "Today, I share everything I've gathered — as a certified Healing Nature Trail Guide and Forest School Leader — on the healing trail at Târsa, in the heart of the Luncani Plateau.",
+    "quote": "The trail is actually me."
+  },
+  "HealingTrail": {
+    "label": "HEALING NATURE TRAIL",
+    "title": "A journey toward yourself",
+    "body1": "The Healing Trail is more than a path through nature — it is a living metaphor for the inner journey.",
+    "body2": "Designed on the basis of interdisciplinary studies, every step on the trail becomes an invitation: toward deep connection with yourself, with the help of nature. Earthing through the direct contact of your soles with the ground. The experience of touching and listening to flowing water. Breathing exercises in the silence of the forest. Spaces designed for reflection and introspection.",
+    "body3": "And at the crossroads, the trail offers you the choice of unmarked paths — a symbol of adventure, of embracing the unknown, of fresh new perspectives.",
+    "subtitle": "Healing spaces along the trail",
+    "spaces": {
+      "untangle": {
+        "title": "Zen Untangle",
+        "description": "A place for untangling thoughts, where the mind grows quiet and the tangled threads of the day come undone in silence."
+      },
+      "labyrinth": {
+        "title": "Flower Labyrinth",
+        "description": "A walking meditation — you follow the path among flowers, without haste, without destination, only presence."
+      },
+      "zen": {
+        "title": "Zen Garden",
+        "description": "The contemplative garden — a space of deep stillness where nature becomes a mirror."
+      },
+      "bridges": {
+        "title": "Bridges & Crossings",
+        "description": "Symbols of transition — each crossing brings you closer to your inner self."
+      }
+    }
+  },
+  "Benefits": {
+    "label": "SHINRIN-YOKU",
+    "title": "The science behind the forest",
+    "intro": "Forest bathing (Shinrin-Yoku) is not just a beautiful Japanese tradition — it is supported by rigorous scientific research. Here's what happens when you step into the forest:",
+    "items": {
+      "health": {
+        "title": "Physical health",
+        "description": "Lowers blood pressure, improves metabolism and cardiovascular function."
+      },
+      "immune": {
+        "title": "Stronger immune system",
+        "description": "NK (natural killer) cells, which fight infections and tumours, increase significantly after a visit to the forest."
+      },
+      "mental": {
+        "title": "Mental and emotional health",
+        "description": "Reduces cortisol levels, anger, anxiety, and depression — measurable effects from the very first visit."
+      },
+      "sleep": {
+        "title": "Sleep quality",
+        "description": "Terpenes from conifers calm the mind and help combat insomnia naturally."
+      },
+      "clarity": {
+        "title": "Clarity and focus",
+        "description": "Just 15 minutes spent in nature significantly improve mental clarity and the ability to concentrate."
+      }
+    }
+  },
+  "Experiences": {
+    "label": "EXPERIENCES",
+    "title": "Choose your trail",
+    "intro": "Every experience is different because every person is different. There are no rigid programmes — only the invitation to be present.",
+    "cards": {
+      "walks": {
+        "title": "Guided walks",
+        "type": "Individual or group",
+        "description": "A slow, guided walk along the Healing Trail, with nature connection exercises, breathwork, and introspection. Duration and pace adapt to the group.",
+        "cta": "Call to book"
+      },
+      "online": {
+        "title": "Online guidance",
+        "type": "Individual, from anywhere",
+        "description": "For those who cannot reach Târsa — a virtual nature guidance session, adapted to wherever you are. Healing nature is everywhere.",
+        "cta": "Call to book"
+      },
+      "immersive": {
+        "title": "Days at Târsa",
+        "type": "Immersive experience",
+        "description": "I invite you to my home. Together with Alex, Max, and Ida, we offer a refuge — days where you step into another world. Countryside life with forest walks, playing with the children, small tasks in the garden. No planning, no structured therapy programme.\\n\\nWhen asked \\\"What is your qualification?\\\" — the answer is simply \\\"Life.\\\"",
+        "cta": "Discover the experience"
+      }
+    }
+  },
+  "Gallery": {
+    "label": "GALLERY",
+    "title": "Seasons of the Trail",
+    "subtitle": "A glimpse into the path."
+  },
+  "Location": {
+    "label": "WHERE TO FIND US",
+    "title": "Luncani Plateau, Târsa",
+    "body": "The Healing Trail is located in the mountain village of Târsa, Hunedoara county — a place of rare beauty, surrounded by Dacian fortresses and Roman camps, with wide views toward the Orăștie, Apuseni, and Retezat mountains."
+  },
+  "Contact": {
+    "label": "CONTACT",
+    "title": "Begin the journey",
+    "body": "My trail is waiting to become our trail. Call, write, or simply come.",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "location": "Târsa, Hunedoara, Romania",
+    "form": {
+      "name": "Your name",
+      "contact": "Phone or email",
+      "message": "Your message",
+      "submit": "Send"
+    }
+  },
+  "Footer": {
+    "left": "© 2026 Poteca.io",
+    "center": "Healing Nature Trail · Târsa, Hunedoara",
+    "right": "Made with love in the heart of nature"
+  },
+  "Meta": {
+    "title": "Poteca.io — Healing Nature Trail in Târsa, Romanian Carpathians",
+    "description": "Healing Nature Trail in the Luncani Plateau, Târsa. Guided forest bathing (Shinrin-Yoku), immersive nature experiences, and reconnection with yourself. With Oana, certified healing nature trail guide."
+  }
+}
