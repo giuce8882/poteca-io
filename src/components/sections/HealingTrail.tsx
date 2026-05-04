@@ -91,9 +91,9 @@ export function HealingTrail() {
           variants={fadeUp}
           className="mt-32 pt-20 border-t border-text-light/10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
         >
-          <div className="relative aspect-[4/3] w-full max-w-[600px] mx-auto rounded-sm overflow-hidden filter saturate-[0.85] contrast-[1.05]">
+          <div className="relative aspect-[3/4] w-full max-w-[450px] mx-auto rounded-sm overflow-hidden filter saturate-[0.85] contrast-[1.05]">
             <Image 
-              src="/images/gallery/media__1776852768698.jpg" 
+              src="/images/guides.jpg" 
               alt="Oana and Cosmin" 
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
