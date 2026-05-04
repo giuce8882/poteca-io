@@ -38,13 +38,30 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.poteca.io'),
   title: "Poteca.io — Healing Nature Trail",
   description: "A digital forest bath — the website itself should feel like stepping onto a healing trail in the Carpathian mountains.",
+  openGraph: {
+    title: "Poteca.io — Healing Nature Trail",
+    description: "A digital forest bath — the website itself should feel like stepping onto a healing trail in the Carpathian mountains.",
+    url: "https://www.poteca.io",
+    siteName: "Poteca.io",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Poteca.io — Healing Nature Trail",
+    description: "A digital forest bath — the website itself should feel like stepping onto a healing trail in the Carpathian mountains.",
+  },
 };
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
 }
+
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default async function LocaleLayout({
   children,
@@ -79,6 +96,8 @@ export default async function LocaleLayout({
             {children}
           </SmoothScroll>
         </NextIntlClientProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

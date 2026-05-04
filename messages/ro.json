@@ -10,44 +10,46 @@
   "Hero": {
     "label": "Traseu de Vindecare prin Natură",
     "headline": "Bine ai venit pe <highlight>poteca mea</highlight>",
-    "subtitle": "Platoul Luncani, Târsa. O călătorie spre tine, cu ajutorul naturii.",
+    "subtitle": "Platoul Luncanilor, Târsa. O călătorie spre tine, ghidată de ritmurile naturii",
     "cta1": "Explorează Poteca",
     "cta2": "Povestea",
     "scroll": "Descoperă poteca"
   },
   "Story": {
-    "label": "DESPRE MINE",
-    "title": "Eu sunt poteca",
-    "body1": "Mă numesc Oana. Sunt mamă a doi băieți sălbatici de 7 și 10 ani, m-am lăsat purtată de energia antreprenoriatului de peste 20 de ani.",
-    "body2": "Motto-ul care m-a purtat prin toate a fost întotdeauna același: \"Nu merge pe unde te duce drumul — mergi pe unde nu există drum și lasă o potecă.\"",
-    "body3": "Și asta am și făcut. Am lăsat poteci prin industrii despre care lumea spunea că sunt imposibile — de la a aduce prima fabrică de procesare a semințelor de cânepă în Europa, la construcții de cânepă și var, o grădiniță în pădure, o școală liberă democratică și agricultură ecologică.",
-    "body4": "Turism, real-estate, industria alimentară, educație alternativă, construcții — fiecare experiență a fost o altă potecă. Și abia acum, după 20 de ani, am realizat: toate aceste poteci formează, de fapt, una singură. E viața mea.",
-    "body5": "Astăzi, pun tot ce am adunat — în calitate de ghid certificat Healing Nature Trail și Forest School Leader — pe poteca de vindecare de la Târsa, în inima platoului Luncani.",
-    "quote": "Poteca sunt, de fapt, eu."
+    "label": "Despre mine",
+    "title": "",
+    "body1": "Numele meu este Oana, sunt mamă a doi băieți “free range” de 7 și 10 ani si de peste 20 de ani m-am lăsat purtată de energia antreprenoriatului .",
+    "body2": "Motto-ul care m-a însoțit în fiecare poveste a fost mereu același: \"Nu merge unde te duce calea, mergi pe unde nu există cale și lasă în urmā o potecă.\"",
+    "body3": "Și asta am făcut. Am lăsat poteci în domenii despre care ‘lumea’ spunea că sunt imposibile sau o nebunie- prima fabrică de procesare a semințelor de cânepă din Europa, cultivare si procesare fibre cânepā pentru industria auto, case din cânepă și var, grădiniță în pădure, școală liberă democratică.",
+    "body4": "Turism, real-estate, industrie alimentară, educație alternativă, construcții naturale, fiecare experiență a constituit o nou potecă. Și abia acum, după 20 de ani, am realizat că toate aceste poteci formează, de fapt, una singură. E viața mea.",
+    "body5": "Astăzi, îmi doresc să împărtăşesc tot ce am acumulat, în calitate de ghid certificat Healing Nature Guide, pe potecile vindecătoare de la Târsa, în inima platoului Luncanilor.",
+    "quote": "Poteca sunt de fapt eu"
   },
   "HealingTrail": {
-    "label": "POTECA VINDECĂTOARE",
+    "label": "POTECA VINDECĂTOARE WALDEN",
     "title": "O călătorie spre tine",
-    "body1": "Poteca de la Târsa este mai mult decât o plimbare prin natură — este o metaforă vie a călătoriei interioare.",
+    "body1": "Poteca de la Târsa este mai mult decât o plimbare prin natură, este o metaforă vie a călătoriei interioare.",
     "body2": "Proiectată pe baza unor studii interdisciplinare, fiecare pas pe potecă devine o invitație: la reconectare profundă cu sinele, cu ajutorul naturii. Împământare prin contactul direct al tălpilor cu pământul. Experiența atingerii și ascultării apei curgătoare. Exerciții de respirație în liniștea pădurii. Spații construite pentru reflecție și introspecție.",
-    "body3": "Iar la intersecții, poteca îți oferă alegerea unor trasee nemarcate — un simbol al aventurii, al asumării necunoscutului, al perspectivelor mereu noi.",
+    "body3": "Iar la intersecții, poteca îți oferă alegerea unor trasee nemarcate, un simbol al aventurii, al asumării necunoscutului, al perspectivelor mereu noi.",
     "subtitle": "Spații de vindecare pe potecă",
+    "guidesTitle": "Călăuzele potecii Oana şi Cosmin",
+    "guidesText": "Lucrăm în echipă. Pentru grupuri sau o experiența ghidată în energie masculină ne este alături și tatăl potecii Walden, Cosmin",
     "spaces": {
       "untangle": {
         "title": "Zen Untangle",
         "description": "Un loc pentru descâlcirea gândurilor, unde mintea se liniștește și ițele zilei se desfac în tăcere."
       },
       "labyrinth": {
-        "title": "Labirintul Floral",
-        "description": "O meditație în mișcare — urmezi calea printre flori, fără grabă, fără destinație, doar prezență."
+        "title": "Labirintul “Copacul Vieții”",
+        "description": "O meditație în mișcare urmezi calea unduită și te lași purtat spre linişte și claritate"
       },
       "zen": {
         "title": "Grădina Zen",
-        "description": "Grădina contemplativă — un spațiu de nemișcare profundă în care natura devine oglindă."
+        "description": "Grădina contemplativă, un spațiu de nemișcare profundă în care îți desenezi povestea și natura devine oglindă."
       },
       "bridges": {
         "title": "Podețe și Treceri",
-        "description": "Simboluri ale tranziției — fiecare trecere te duce mai aproape de tine."
+        "description": "Simboluri ale tranziției, fiecare trecere te duce mai aproape de tine."
       }
     }
   },
@@ -62,7 +64,7 @@
       },
       "immune": {
         "title": "Sistem imunitar puternic",
-        "description": "Celulele NK (natural killers), care luptă împotriva infecțiilor, cresc semnificativ după o vizită în pădure."
+        "description": "Stimulează semnificativ sistemul imunitar prin creșterea numărului și activității celulelor ucigașe naturale (NK), care combat cancerul și infecțiile virale, cu aproximativ 50%"
       },
       "mental": {
         "title": "Sănătate mentală și emoțională",
@@ -81,18 +83,18 @@
   "Experiences": {
     "label": "EXPERIENȚE",
     "title": "Alege-ți poteca",
-    "intro": "Fiecare experiență este diferită pentru că fiecare om este diferit. Nu există programe rigide — doar invitația de a fi prezent.",
+    "intro": "Fiecare experiență este diferită pentru că fiecare om este diferit. Nu există programe rigide, doar invitația de a fi prezent.",
     "cards": {
       "walks": {
         "title": "Plimbări ghidate",
         "type": "Individual sau grup",
-        "description": "O plimbare lentă, ghidată, pe Poteca Vindecătoare, cu exerciții de conectare, respirație și introspecție. Durata și ritmul se adaptează grupului.",
+        "description": "O plimbare lentă, ghidată, pe Poteca Vindecătoare Walden, cu exerciții de conectare, respirație și introspecție. Durata și ritmul se adaptează grupului.",
         "cta": "Sună pentru programare"
       },
       "online": {
-        "title": "Ghidare online",
-        "type": "Individual, de oriunde",
-        "description": "Pentru cei care nu pot ajunge la Târsa — o sesiune virtuală de ghidare în natură, adaptată oriunde te-ai asfla. Natură vindecătoare este peste tot.",
+        "title": "INDIVIDUAL, DE ORIUNDE",
+        "type": "Călăuzire online",
+        "description": "Pentru cei care nu pot ajunge la Târsa, o plimbare ghidată, în format hibrid, eu în pădure, tu oriunde te-ai afla. Natura vindecătoare vine la tine.",
         "cta": "Sună pentru programare"
       },
       "immersive": {
@@ -110,7 +112,7 @@
   },
   "Location": {
     "label": "UNDE NE GĂSEȘTI",
-    "title": "Platoul Luncani, Târsa",
+    "title": "Platoul Luncanilor, Târsa",
     "body": "Poteca Vindecătoare se află în satul de munte Târsa, județul Hunedoara — un loc înconjurat de cetăți dacice și castre romane, cu vederi largi spre Munții Orăștie, Apuseni și Retezat."
   },
   "Contact": {
@@ -134,6 +136,6 @@
   },
   "Meta": {
     "title": "Poteca.io — Traseu de Vindecare prin Natură în Târsa, Munții Carpați",
-    "description": "Traseu de Vindecare prin Natură în Platoul Luncani, Târsa. Băi de pădure, experiențe imersive și reconectare profundă cu tine însuți. Cu Oana, ghid certificat."
+    "description": "Traseu de Vindecare prin Natură în Platoul Luncanilor, Târsa. Băi de pădure, experiențe imersive și reconectare profundă cu tine însuți. Cu Oana, ghid certificat."
   }
 }

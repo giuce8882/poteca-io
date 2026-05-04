@@ -10,44 +10,46 @@
   "Hero": {
     "label": "Healing Nature Trail",
     "headline": "Welcome to <highlight>my trail</highlight>",
-    "subtitle": "Luncani Plateau, Târsa. A journey toward yourself, with the help of nature.",
+    "subtitle": "Luncanilor Plateau, Târsa. A journey toward yourself, guided by the gentle rhythm of nature",
     "cta1": "Explore the Trail",
     "cta2": "The Story",
     "scroll": "Discover the trail"
   },
   "Story": {
-    "label": "ABOUT ME",
-    "title": "I am the trail",
-    "body1": "My name is Oana. I'm a mother of two wild boys aged 7 and 10, and I've been dancing with the energy of entrepreneurship for over 20 years.",
-    "body2": "The motto that has carried me through everything has always been the same: \"Don't go where the path may lead — go where there is no path and leave a trail.\"",
-    "body3": "And that's exactly what I did. I left trails through industries that people said were impossible — from building Europe's first hemp seed processing factory, to hemp-and-lime construction, a forest kindergarten, a free democratic school, and organic agriculture.",
-    "body4": "Tourism, real estate, food industry, alternative education, construction — each experience was a new trail. And now, 20 years later, I've realized: all these trails form a single one. It's my life.",
-    "body5": "Today, I share everything I've gathered — as a certified Healing Nature Trail Guide and Forest School Leader — on the healing trail at Târsa, in the heart of the Luncani Plateau.",
+    "label": "About me",
+    "title": "",
+    "body1": "My name is Oana, I am a mother of two “free range” boys, ages 7 and 10, and for over 20 years I have been dancing with the energy of entrepreneurship.",
+    "body2": "The motto that accompanied me every step along the way has always been the same: \"Don't go where the path may lead, go where there is no path and leave a trail\"",
+    "body3": "And that's what I did. I left trails in areas that 'the world' said were impossible or crazy - the first hemp seed processing factory in Europe, cultivation and processing of hemp fibers for the automotive industry, houses made of hemp and lime, a kindergarten in the forest, a democratic free school.",
+    "body4": "Tourism, real estate, food industry, alternative education, natural constructions, each experience generated a new trail. And only now, after 20 years, have I realised that all these trails actually form a single one, my life.",
+    "body5": "Today, I want to share everything I have lived and learned, as a certified Healing Nature Guide, on the healing trails of Târsa, in the heart of the Luncanilor plateau.",
     "quote": "The trail is actually me."
   },
   "HealingTrail": {
-    "label": "HEALING NATURE TRAIL",
+    "label": "Walden Healing Nature Trail",
     "title": "A journey toward yourself",
-    "body1": "The Healing Trail is more than a path through nature — it is a living metaphor for the inner journey.",
-    "body2": "Designed on the basis of interdisciplinary studies, every step on the trail becomes an invitation: toward deep connection with yourself, with the help of nature. Earthing through the direct contact of your soles with the ground. The experience of touching and listening to flowing water. Breathing exercises in the silence of the forest. Spaces designed for reflection and introspection.",
-    "body3": "And at the crossroads, the trail offers you the choice of unmarked paths — a symbol of adventure, of embracing the unknown, of fresh new perspectives.",
+    "body1": "The Healing Trail is more than a path through nature, it is a living metaphor for the inner journey.",
+    "body2": "Its design is based on interdisciplinary studies, every step on the trail becomes an invitation toward deep connection with yourself through nature. Grounding through the direct contact of your soles with the earth, the experience of touching and listening to flowing water, breathing exercises in the silence of the forest, spaces designed for reflection and introspection.",
+    "body3": "And at the decision forks, the trail offers you the choice of unmarked paths, a symbol of adventure, of embracing the unknown, of fresh new perspectives.",
     "subtitle": "Healing spaces along the trail",
+    "guidesTitle": "Your guides on the trail Oana şi Cosmin",
+    "guidesText": "We work as a team. For groups or a guided experience in masculine energy, the father of the Walden trail, Cosmin, is also with us.",
     "spaces": {
       "untangle": {
         "title": "Zen Untangle",
         "description": "A place for untangling thoughts, where the mind grows quiet and the tangled threads of the day come undone in silence."
       },
       "labyrinth": {
-        "title": "Flower Labyrinth",
-        "description": "A walking meditation — you follow the path among flowers, without haste, without destination, only presence."
+        "title": "Tree of Life Labyrinth",
+        "description": "A walking meditation you follow the winding path and let yourself guided towards inner peace and clarity."
       },
       "zen": {
         "title": "Zen Garden",
-        "description": "The contemplative garden — a space of deep stillness where nature becomes a mirror."
+        "description": "The contemplative garden, a space of deep stillness where you draw your story and nature becomes a mirror."
       },
       "bridges": {
         "title": "Bridges & Crossings",
-        "description": "Symbols of transition — each crossing brings you closer to your inner self."
+        "description": "Symbols of transition, each crossing brings you closer to your inner self."
       }
     }
   },
@@ -61,8 +63,8 @@
         "description": "Lowers blood pressure, improves metabolism and cardiovascular function."
       },
       "immune": {
-        "title": "Stronger immune system",
-        "description": "NK (natural killer) cells, which fight infections and tumours, increase significantly after a visit to the forest."
+        "title": "Stronger Immune System",
+        "description": "NK (natural killer) cells, which fight viral infections and cancer cells, increase up to 50% after a session in the forest"
       },
       "mental": {
         "title": "Mental and emotional health",
@@ -81,24 +83,24 @@
   "Experiences": {
     "label": "EXPERIENCES",
     "title": "Choose your trail",
-    "intro": "Every experience is different because every person is different. There are no rigid programmes — only the invitation to be present.",
+    "intro": "Every experience is different because every person is different. There are no rigid programmes, only the invitation to be present.",
     "cards": {
       "walks": {
-        "title": "Guided walks",
+        "title": "Guided Walks",
         "type": "Individual or group",
-        "description": "A slow, guided walk along the Healing Trail, with nature connection exercises, breathwork, and introspection. Duration and pace adapt to the group.",
+        "description": "A slow, guided walk on the Healing Trail, with nature connection exercises, breath work and introspection. Duration and pace adapt to the group.",
         "cta": "Call to book"
       },
       "online": {
-        "title": "Online guidance",
-        "type": "Individual, from anywhere",
-        "description": "For those who cannot reach Târsa — a virtual nature guidance session, adapted to wherever you are. Healing nature is everywhere.",
+        "title": "INDIVIDUAL, FROM ANYWHERE",
+        "type": "Online guidance",
+        "description": "For those who cannot reach Târsa, a hybrid guided nature session, me in the forest, you anywhere. Healing nature comes to you.",
         "cta": "Call to book"
       },
       "immersive": {
-        "title": "Days at Târsa",
-        "type": "Immersive experience",
-        "description": "I invite you to my home. Together with Alex, Max, and Ida, we offer a refuge — days where you step into another world. Countryside life with forest walks, playing with the children, small tasks in the garden. No planning, no structured therapy programme.\\n\\nWhen asked \\\"What is your qualification?\\\" — the answer is simply \\\"Life.\\\"",
+        "title": "Days in Târsa",
+        "type": "IMMERSIVE EXPERIENCE",
+        "description": "I invite you to my home. Together with Alex, Max, and Ida, we offer a refuge, days where you step into another world. Village life with forest walks, playing with the children, small tasks in the garden. No planning, no structured therapy programme.\n\nWhen asked \"What is your qualification?\" — the answer is simply \"Life.\"",
         "cta": "Discover the experience"
       }
     }
@@ -110,7 +112,7 @@
   },
   "Location": {
     "label": "WHERE TO FIND US",
-    "title": "Luncani Plateau, Târsa",
+    "title": "Luncanilor Plateau, Târsa",
     "body": "The Healing Trail is located in the mountain village of Târsa, Hunedoara county — a place of rare beauty, surrounded by Dacian fortresses and Roman camps, with wide views toward the Orăștie, Apuseni, and Retezat mountains."
   },
   "Contact": {
@@ -134,6 +136,6 @@
   },
   "Meta": {
     "title": "Poteca.io — Healing Nature Trail in Târsa, Romanian Carpathians",
-    "description": "Healing Nature Trail in the Luncani Plateau, Târsa. Guided forest bathing (Shinrin-Yoku), immersive nature experiences, and reconnection with yourself. With Oana, certified healing nature trail guide."
+    "description": "Healing Nature Trail in the Luncanilor Plateau, Târsa. Guided forest bathing (Shinrin-Yoku), immersive nature experiences, and reconnection with yourself. With Oana, certified healing nature trail guide."
   }
 }

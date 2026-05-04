@@ -91,11 +91,13 @@ export function Gallery() {
               className="relative w-full overflow-hidden break-inside-avoid cursor-pointer rounded-sm"
               onClick={() => setSelectedImageIndex(index)}
             >
-              <img 
+              <Image 
                 src={src} 
                 alt={`Trail Gallery Image ${index + 1}`} 
+                width={800}
+                height={1200}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="w-full h-auto object-cover filter saturate-[0.85] contrast-[1.05] hover:saturate-100 transition-all duration-500"
-                loading="lazy"
               />
             </motion.div>
           ))}

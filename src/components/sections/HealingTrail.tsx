@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function HealingTrail() {
   const t = useTranslations("HealingTrail");
@@ -80,6 +81,33 @@ export function HealingTrail() {
               </p>
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* Guides Section */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeUp}
+          className="mt-32 pt-20 border-t border-text-light/10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+        >
+          <div className="relative aspect-[4/3] w-full max-w-[600px] mx-auto rounded-sm overflow-hidden filter saturate-[0.85] contrast-[1.05]">
+            <Image 
+              src="/images/gallery/media__1776852768698.jpg" 
+              alt="Oana and Cosmin" 
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="flex flex-col justify-center">
+            <h3 className="font-display text-h2 text-accent-gold mb-6">
+              {t("guidesTitle")}
+            </h3>
+            <p className="font-serif text-body-lg text-text-light/80 leading-relaxed font-light">
+              {t("guidesText")}
+            </p>
+          </div>
         </motion.div>
 
       </div>

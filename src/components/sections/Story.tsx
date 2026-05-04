@@ -22,40 +22,18 @@ export function Story() {
       {/* Decorative center divider leading into section */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-20 bg-gradient-to-b from-text-dark/20 to-transparent" />
 
-      <div className="max-w-[1300px] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-[45%_50%] gap-16 lg:gap-24 items-center">
-        
-        {/* Intentionally asymmetrical composition for visual interest */}
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={fadeUp}
-          className="order-2 lg:order-1 relative aspect-[3/4] w-full max-w-[480px] mx-auto lg:mx-0 filter sepia-[0.05] saturate-[0.9] contrast-[1.05]"
-        >
-          <img 
-            src="/images/story/oana.jpg" 
-            alt="Oana - Healing Nature Trail Guide"
-            className="absolute inset-0 w-full h-full object-cover rounded shadow-lg"
-          />
-          
-          {/* Subtle gold decoration logic per design spec */}
-          <div className="absolute -bottom-6 -right-6 w-full h-full border border-accent-gold/20 pointer-events-none rounded" />
-        </motion.div>
-
+      <div className="max-w-[800px] mx-auto px-6 lg:px-12">
         {/* Text Block */}
-        <div className="order-1 lg:order-2 flex flex-col justify-center">
+        <div className="flex flex-col justify-center">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeUp}
           >
-            <span className="font-sans text-label uppercase tracking-[0.16em] text-text-muted mb-6 block">
+            <span className="font-sans text-label uppercase tracking-[0.16em] text-text-muted mb-10 block">
               {t("label")}
             </span>
-            <h2 className="font-display text-h1 text-text-dark leading-[1.1] mb-10 pb-6 border-b border-text-dark/10 max-w-max">
-              {t("title")}
-            </h2>
           </motion.div>
 
           <motion.div 
@@ -65,7 +43,7 @@ export function Story() {
             variants={{
               visible: { transition: { staggerChildren: 0.15 } }
             }}
-            className="flex flex-col gap-6 font-serif text-body-lg text-text-medium max-w-[620px] leading-relaxed"
+            className="flex flex-col gap-6 font-serif text-body-lg text-text-medium leading-relaxed"
           >
             <motion.p variants={fadeUp}>{t("body1")}</motion.p>
             <motion.p variants={fadeUp} className="italic pr-6 border-l-2 border-accent-gold text-text-dark my-4 pl-6 text-[1.15em] leading-[1.6]">
@@ -82,7 +60,6 @@ export function Story() {
             </motion.div>
           </motion.div>
         </div>
-        
       </div>
     </section>
   );

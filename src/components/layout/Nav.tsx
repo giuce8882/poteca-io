@@ -5,6 +5,7 @@ import { Link, usePathname } from "@/i18n/routing";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function Nav() {
   const t = useTranslations("Nav");
@@ -46,21 +47,24 @@ export function Nav() {
       <div className="max-w-[1440px] mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 font-display text-2xl tracking-wide text-text-light">
-          <img src="/images/logo.png" alt="Poteca.io Logo" className="w-[42px] h-[42px] md:w-[50px] md:h-[50px] object-contain drop-shadow-sm" />
+          <Image src="/images/logo.png" alt="Poteca.io Logo" width={50} height={50} className="w-[42px] h-[42px] md:w-[50px] md:h-[50px] object-contain drop-shadow-sm" />
           <span className="mt-1">Poteca</span>
         </Link>
 
         {/* Desktop Links */}
         <nav className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
-            <Link
+            <button
               key={link.key}
-              href={link.href}
-              className="text-label font-sans uppercase tracking-[0.08em] text-text-light/85 hover:text-accent-gold transition-colors duration-400 relative group"
+              onClick={() => {
+                const id = link.href.replace('#', '');
+                document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="text-label font-sans uppercase tracking-[0.08em] text-text-light/85 hover:text-accent-gold transition-colors duration-400 relative group cursor-pointer"
             >
               {t(link.key)}
               <span className="absolute -bottom-1.5 left-0 w-0 h-[1px] bg-accent-gold transition-all duration-500 ease-out group-hover:w-full" />
-            </Link>
+            </button>
           ))}
         </nav>
 
