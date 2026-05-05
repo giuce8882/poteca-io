@@ -10,25 +10,34 @@ export function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [loaded, setLoaded] = useState(false);
 
-  // Ready signal
+  // Ready signal with fallback for iOS Low Power Mode
   useEffect(() => {
     let active = true;
     
-    // We only wait for the video metadata to load so it's instant
     const handleCanPlay = () => {
-      if (active) setLoaded(true);
+      if (active) {
+        setLoaded(true);
+        // Pause the autoplaying video so scroll can take over
+        if (videoRef.current) videoRef.current.pause();
+      }
     };
 
     if (videoRef.current) {
       if (videoRef.current.readyState >= 1) {
-        setLoaded(true); 
+        handleCanPlay();
       } else {
         videoRef.current.addEventListener('loadedmetadata', handleCanPlay);
       }
     }
 
+    // Fallback: Force remove loading screen after 1.5s in case iOS blocks autoPlay
+    const fallbackTimer = setTimeout(() => {
+      if (active) setLoaded(true);
+    }, 1500);
+
     return () => {
       active = false;
+      clearTimeout(fallbackTimer);
       if (videoRef.current) {
         videoRef.current.removeEventListener('loadedmetadata', handleCanPlay);
       }
@@ -97,6 +106,7 @@ export function Hero() {
           src="/videos/hero-scroll.mp4"
           playsInline
           muted
+          autoPlay
           preload="auto"
         />
 
