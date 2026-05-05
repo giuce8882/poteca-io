@@ -3,7 +3,7 @@ import { DM_Serif_Display, Cormorant_Garamond, Lora, Outfit } from "next/font/go
 import "@/app/globals.css";
 import { SmoothScroll } from "@/components/effects/SmoothScroll";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { getMessages, setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
@@ -37,24 +37,30 @@ const outfit = Outfit({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://www.poteca.io'),
-  title: "Poteca.io — Healing Nature Trail",
-  description: "A digital forest bath — the website itself should feel like stepping onto a healing trail in the Carpathian mountains.",
-  openGraph: {
-    title: "Poteca.io — Healing Nature Trail",
-    description: "A digital forest bath — the website itself should feel like stepping onto a healing trail in the Carpathian mountains.",
-    url: "https://www.poteca.io",
-    siteName: "Poteca.io",
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Poteca.io — Healing Nature Trail",
-    description: "A digital forest bath — the website itself should feel like stepping onto a healing trail in the Carpathian mountains.",
-  },
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
+  const t = await getTranslations({ locale, namespace: 'Meta' });
+
+  return {
+    metadataBase: new URL('https://www.poteca.io'),
+    title: t('title'),
+    description: t('description'),
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      url: "https://www.poteca.io",
+      siteName: "Poteca.io",
+      locale: locale === 'ro' ? "ro_RO" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t('title'),
+      description: t('description'),
+    },
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
