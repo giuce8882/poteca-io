@@ -120,7 +120,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
-            className="flex items-center gap-3 font-sans text-[10px] sm:text-xs uppercase tracking-[0.2em] text-text-muted mb-6"
+            className="flex items-center gap-3 font-sans text-[10px] sm:text-xs uppercase tracking-[0.2em] text-text-dark/70 mb-6"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-green-mid"></span>
             {t("label")}
