@@ -58,8 +58,8 @@ export function Benefits() {
               variants={fadeUp}
               className="flex gap-8 group"
             >
-              {/* Abstract Icon Index */}
-              <div className="text-accent-gold font-sans font-light text-2xl pt-1 min-w-8">
+              {/* Abstract Icon Index - Adjusted for WCAG Contrast */}
+              <div className="text-accent-terracotta font-sans font-medium text-2xl pt-1 min-w-8">
                 0{i + 1}
               </div>
               <div>

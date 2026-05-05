@@ -46,7 +46,7 @@ export function Nav() {
     >
       <div className="max-w-[1440px] mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 font-display text-2xl tracking-wide text-text-light">
+        <Link href="/" className={clsx("flex items-center gap-3 font-display text-2xl tracking-wide transition-colors duration-700", scrolled ? "text-text-light" : "text-text-dark")}>
           <Image src="/images/logo.png" alt="Poteca.io Logo" width={50} height={50} className="w-[42px] h-[42px] md:w-[50px] md:h-[50px] object-contain drop-shadow-sm" />
           <span className="mt-1">Poteca</span>
         </Link>
@@ -60,7 +60,10 @@ export function Nav() {
                 const id = link.href.replace('#', '');
                 document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="text-label font-sans uppercase tracking-[0.08em] text-text-light/85 hover:text-accent-gold transition-colors duration-400 relative group cursor-pointer"
+              className={clsx(
+                "text-label font-sans uppercase tracking-[0.08em] hover:text-accent-gold transition-colors duration-400 relative group cursor-pointer",
+                scrolled ? "text-text-light/85" : "text-text-dark/85"
+              )}
             >
               {t(link.key)}
               <span className="absolute -bottom-1.5 left-0 w-0 h-[1px] bg-accent-gold transition-all duration-500 ease-out group-hover:w-full" />
@@ -73,15 +76,15 @@ export function Nav() {
           <Link
             href={pathname}
             locale="ro"
-            className={clsx("transition-colors duration-300", locale === "ro" ? "text-accent-gold" : "text-text-muted hover:text-text-light")}
+            className={clsx("transition-colors duration-300", locale === "ro" ? "text-accent-gold" : (scrolled ? "text-text-muted hover:text-text-light" : "text-text-medium hover:text-text-dark"))}
           >
             RO
           </Link>
-          <span className="text-text-muted/40 font-light">/</span>
+          <span className={clsx("font-light transition-colors duration-300", scrolled ? "text-text-muted/40" : "text-text-medium/40")}>/</span>
           <Link
             href={pathname}
             locale="en"
-            className={clsx("transition-colors duration-300", locale === "en" ? "text-accent-gold" : "text-text-muted hover:text-text-light")}
+            className={clsx("transition-colors duration-300", locale === "en" ? "text-accent-gold" : (scrolled ? "text-text-muted hover:text-text-light" : "text-text-medium hover:text-text-dark"))}
           >
             EN
           </Link>
