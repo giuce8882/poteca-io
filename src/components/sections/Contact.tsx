@@ -84,7 +84,7 @@ export function Contact() {
             </div>
             <div>
               <span className="font-sans text-xs uppercase tracking-widest text-text-muted block mb-2">{t("emailLabel")}</span>
-              <a href="mailto:hello@poteca.io" className="hover:text-accent-gold transition-colors duration-300">hello@poteca.io</a>
+              <a href="mailto:oana@poteca.io" className="hover:text-accent-gold transition-colors duration-300">oana@poteca.io</a>
             </div>
             <div>
               <span className="font-sans text-xs uppercase tracking-widest text-text-muted block mb-2">Location</span>
