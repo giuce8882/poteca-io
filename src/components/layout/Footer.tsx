@@ -10,6 +10,11 @@ export function Footer() {
         <div className="opacity-40">{t("center")}</div>
         <div className="text-accent-gold opacity-80">{t("right")}</div>
       </div>
+      
+      {/* SEO hidden-in-plain-sight block - subtle and non-intrusive */}
+      <div className="max-w-[800px] mx-auto px-6 lg:px-12 mt-8 text-center text-text-light/20 font-serif normal-case tracking-normal text-[11px] leading-relaxed">
+        Premium Forest Bathing Retreat & Nature Therapy in the heart of Transylvania. Authentic Shinrin-Yoku experiences for deep connection and wellness in Romania.
+      </div>
     </footer>
   );
 }
