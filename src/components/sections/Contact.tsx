@@ -67,7 +67,7 @@ export function Contact() {
           variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
           className="flex flex-col"
         >
-          <motion.span variants={fadeUp} className="font-sans text-label uppercase tracking-[0.16em] text-accent-gold mb-6 block">
+          <motion.span variants={fadeUp} className="font-sans text-label uppercase tracking-[0.16em] text-text-light/80 mb-6 block">
             {t("label")}
           </motion.span>
           <motion.h2 variants={fadeUp} className="font-display text-h1 leading-[1.1] mb-8 pb-6 border-b border-text-light/10 max-w-max">

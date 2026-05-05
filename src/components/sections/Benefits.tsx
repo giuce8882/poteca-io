@@ -30,7 +30,7 @@ export function Benefits() {
             variants={fadeUp}
             className="pr-4"
           >
-            <span className="font-sans text-label uppercase tracking-[0.16em] text-text-muted mb-6 block">
+            <span className="font-sans text-label uppercase tracking-[0.16em] text-text-dark/70 mb-6 block">
               {t("label")}
             </span>
             <h2 className="font-display text-h1 text-text-dark leading-[1.1] mb-8 pb-6 border-b border-text-dark/10">
@@ -63,9 +63,9 @@ export function Benefits() {
                 0{i + 1}
               </div>
               <div>
-                <h4 className="font-display text-h3 text-text-dark mb-4">
+                <h3 className="font-display text-h3 text-text-dark mb-4">
                   {t(`items.${item}.title`)}
-                </h4>
+                </h3>
                 <p className="font-serif text-body text-text-medium leading-relaxed max-w-[500px]">
                   {t(`items.${item}.description`)}
                 </p>
