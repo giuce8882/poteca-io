@@ -53,7 +53,7 @@ export function Story() {
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeUp}
           >
-            <span className="font-sans text-label uppercase tracking-[0.16em] text-text-muted mb-10 block">
+            <span className="font-sans text-label uppercase tracking-[0.16em] text-text-dark/70 mb-10 block">
               {t("label")}
             </span>
           </motion.div>

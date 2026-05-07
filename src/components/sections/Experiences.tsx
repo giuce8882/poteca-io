@@ -30,7 +30,7 @@ export function Experiences() {
            variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
            className="max-w-[800px] mb-20 text-center mx-auto flex flex-col items-center"
         >
-          <motion.span variants={fadeUp} className="font-sans text-label uppercase tracking-[0.16em] text-accent-gold mb-6 block">
+          <motion.span variants={fadeUp} className="font-sans text-label uppercase tracking-[0.16em] text-accent-light mb-6 block">
             {t("label")}
           </motion.span>
           <motion.h2 variants={fadeUp} className="font-display text-h1 leading-[1.1] mb-10">

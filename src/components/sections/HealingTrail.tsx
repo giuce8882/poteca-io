@@ -31,7 +31,7 @@ export function HealingTrail() {
            variants={fadeUp}
            className="max-w-[800px] mb-24"
         >
-          <span className="font-sans text-label uppercase tracking-[0.16em] text-text-muted mb-6 block">
+          <span className="font-sans text-label uppercase tracking-[0.16em] text-text-dark/70 mb-8 block">
             {t("label")}
           </span>
           <h2 className="font-display text-h1 text-text-light leading-[1.1] mb-10 pb-6 border-b border-text-light/10 max-w-max">

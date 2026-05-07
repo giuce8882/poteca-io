@@ -64,7 +64,7 @@ export function Gallery() {
            variants={fadeUp}
            className="mb-16 md:mb-24 text-center mx-auto flex flex-col items-center"
         >
-          <span className="font-sans text-label uppercase tracking-[0.16em] text-text-muted mb-6 block">
+          <span className="font-sans text-label uppercase tracking-[0.16em] text-text-dark/70 mb-6 block text-center">
             {t("label")}
           </span>
           <h2 className="font-display text-h1 text-text-dark leading-[1.1] mb-6">
