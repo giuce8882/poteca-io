@@ -3,9 +3,12 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
+import { VideoModal } from "@/components/ui/VideoModal";
 
 export function Story() {
   const t = useTranslations("Story");
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   const fadeUp = {
     hidden: { opacity: 0, scale: 0.98, y: 40 },
@@ -18,6 +21,7 @@ export function Story() {
   };
 
   return (
+    <>
     <section id="story" className="w-full bg-bg-cream pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden relative z-10">
       
       {/* Decorative center divider leading into section */}
@@ -31,18 +35,40 @@ export function Story() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeUp}
-          className="order-2 lg:order-1 relative aspect-[3/4] w-full max-w-[480px] mx-auto lg:mx-0 filter sepia-[0.05] saturate-[0.9] contrast-[1.05]"
+          className="order-2 lg:order-1 relative aspect-[3/4] w-full max-w-[480px] mx-auto lg:mx-0 group cursor-pointer"
+          onClick={() => setIsVideoOpen(true)}
         >
-          <Image 
-            src="/images/story/oana.jpg" 
-            alt="Oana - Healing Nature Trail Guide"
-            fill
-            sizes="(max-width: 1024px) 100vw, 480px"
-            className="absolute inset-0 object-cover rounded shadow-lg"
-          />
+          <div className="absolute inset-0 z-10 transition-transform duration-700 group-hover:scale-[1.02]">
+            <Image 
+              src="/images/story/oana.jpg" 
+              alt="Oana - Healing Nature Trail Guide"
+              fill
+              sizes="(max-width: 1024px) 100vw, 480px"
+              className="absolute inset-0 object-cover rounded shadow-lg filter sepia-[0.05] saturate-[0.9] contrast-[1.05]"
+            />
+            
+            {/* Play Button Overlay */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="relative">
+                {/* Ripple Effect */}
+                <div className="absolute inset-0 rounded-full bg-accent-gold/30 animate-ping opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                <div className="relative w-20 h-20 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white transition-all duration-500 group-hover:bg-accent-gold group-hover:border-accent-gold group-hover:scale-110 shadow-xl">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+                
+                {/* Label that appears on hover */}
+                <span className="absolute top-full left-1/2 -translate-x-1/2 mt-4 font-sans text-[10px] uppercase tracking-[0.2em] text-white opacity-0 group-hover:opacity-100 transition-all duration-500 whitespace-nowrap bg-bg-deep/40 px-3 py-1 rounded backdrop-blur-sm">
+                  {t("watchStory")}
+                </span>
+              </div>
+            </div>
+          </div>
           
           {/* Subtle gold decoration logic per design spec */}
-          <div className="absolute -bottom-6 -right-6 w-full h-full border border-accent-gold/20 pointer-events-none rounded" />
+          <div className="absolute -bottom-6 -right-6 w-full h-full border border-accent-gold/20 pointer-events-none rounded transition-transform duration-700 group-hover:translate-x-2 group-hover:translate-y-2" />
         </motion.div>
 
         {/* Text Block */}
@@ -84,5 +110,12 @@ export function Story() {
         </div>
       </div>
     </section>
+
+    <VideoModal 
+      isOpen={isVideoOpen} 
+      onClose={() => setIsVideoOpen(false)} 
+      videoId="117isr-BNIE" 
+    />
+    </>
   );
 }
