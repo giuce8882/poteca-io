@@ -15,6 +15,8 @@ const GALLERY_IMAGES = [
   "/images/gallery/media__1776852772554.jpg",
   "/images/gallery/media__1776852795228.jpg",
   "/images/gallery/media__1776852809348.jpg",
+  "/images/gallery/labyrinth.jpg",
+  "/images/gallery/forest_sun.jpg",
 ];
 
 export function Gallery() {
