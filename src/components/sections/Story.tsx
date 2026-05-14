@@ -48,7 +48,7 @@ export function Story() {
             />
             
             {/* Play Button Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-end justify-center pb-16">
               <div className="relative">
                 {/* Ripple Effect */}
                 <div className="absolute inset-0 rounded-full bg-accent-gold/30 animate-ping opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -60,7 +60,7 @@ export function Story() {
                 </div>
                 
                 {/* Label that appears on hover */}
-                <span className="absolute top-full left-1/2 -translate-x-1/2 mt-4 font-sans text-[10px] uppercase tracking-[0.2em] text-white opacity-0 group-hover:opacity-100 transition-all duration-500 whitespace-nowrap bg-bg-deep/40 px-3 py-1 rounded backdrop-blur-sm">
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 font-sans text-[10px] uppercase tracking-[0.2em] text-white opacity-0 group-hover:opacity-100 transition-all duration-500 whitespace-nowrap bg-bg-deep/40 px-3 py-1 rounded backdrop-blur-sm">
                   {t("watchStory")}
                 </span>
               </div>
