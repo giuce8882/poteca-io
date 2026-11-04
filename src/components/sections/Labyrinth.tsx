@@ -76,19 +76,19 @@ export function Labyrinth() {
         </motion.div>
 
         {/* History */}
-        <div>
-          <div className="text-center max-w-[700px] mx-auto mb-12">
-            <h3 className="font-display text-h2 mb-4">{t("history.title")}</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-24">
+          <div className="lg:sticky lg:top-32 h-fit max-w-[460px]">
+            <h3 className="font-display text-h2 mb-6">{t("history.title")}</h3>
             <p className="font-body text-body text-text-light leading-[1.75]">{t("history.intro")}</p>
           </div>
-          <motion.div initial="hidden" whileInView="visible" viewport={view} variants={stagger} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <motion.ul initial="hidden" whileInView="visible" viewport={view} variants={stagger}>
             {history.map((h) => (
-              <motion.div key={h.title} variants={fadeUp} className={card}>
-                <h4 className="font-display text-h3 mb-3">{h.title}</h4>
+              <motion.li key={h.title} variants={fadeUp} className="grid sm:grid-cols-[220px_1fr] gap-3 sm:gap-8 border-t border-accent-gold/30 py-8 first:border-t-0 first:pt-0">
+                <h4 className="font-display text-h3 text-accent-gold">{h.title}</h4>
                 <p className="font-body text-body text-text-light leading-[1.75]">{h.text}</p>
-              </motion.div>
+              </motion.li>
             ))}
-          </motion.div>
+          </motion.ul>
         </div>
 
         {/* Why + stats */}
@@ -142,15 +142,18 @@ export function Labyrinth() {
             <h3 className="font-display text-h2 mb-3">{t("steps.title")}</h3>
             <p className="font-serif italic text-body-lg text-text-light">{t("steps.intro")}</p>
           </div>
-          <motion.div initial="hidden" whileInView="visible" viewport={view} variants={stagger} className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {steps.map((s) => (
-              <motion.div key={s.n} variants={fadeUp} className={card}>
-                <span className="font-display text-hero text-accent-gold/90 leading-none block mb-4">{s.n}</span>
-                <h4 className="font-display text-h3 mb-3">{s.title}</h4>
-                <p className="font-body text-body text-text-light leading-[1.75]">{s.text}</p>
-              </motion.div>
+          <motion.ol initial="hidden" whileInView="visible" viewport={view} variants={stagger} className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10">
+            {steps.map((st, i) => (
+              <motion.li key={st.n} variants={fadeUp}>
+                <div className="flex items-center gap-5 mb-6" aria-hidden>
+                  <span className="font-display text-hero text-accent-gold leading-none">{st.n}</span>
+                  {i < steps.length - 1 && <span className="hidden md:block h-px flex-1 bg-gradient-to-r from-accent-gold/60 to-transparent" />}
+                </div>
+                <h4 className="font-display text-h3 mb-3">{st.title}</h4>
+                <p className="font-body text-body text-text-light leading-[1.75]">{st.text}</p>
+              </motion.li>
             ))}
-          </motion.div>
+          </motion.ol>
         </div>
 
         {/* Hard to sit still + mobile labyrinth video */}
@@ -182,7 +185,7 @@ export function Labyrinth() {
           </div>
           <motion.div initial="hidden" whileInView="visible" viewport={view} variants={stagger} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {where.map((w) => (
-              <motion.div key={w.title} variants={fadeUp} className={card}>
+              <motion.div key={w.title} variants={fadeUp} className="border-t border-accent-gold/40 pt-6">
                 <span className={`${label} block mb-3`}>{w.tag}</span>
                 <h4 className="font-display text-h3 mb-3">{w.title}</h4>
                 <p className="font-body text-body text-text-light leading-[1.75]">{w.text}</p>

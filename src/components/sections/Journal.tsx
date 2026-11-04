@@ -21,7 +21,7 @@ export function Journal() {
             <Image src="/images/profile/profile-01.webp" alt={t("title")} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
           </motion.div>
           {[1, 3].map((n) => (
-            <motion.div key={n} variants={fadeUp} className="relative aspect-square overflow-hidden rounded">
+            <motion.div key={n} variants={fadeUp} className={`relative aspect-square overflow-hidden rounded border-[6px] border-bg-cream shadow-[0_22px_44px_-22px_rgba(44,36,25,0.55)] -mt-14 ${n === 1 ? "-rotate-2 ml-2" : "rotate-2 mr-2"}`}>
               <Image src={`/images/journal/journal-0${n}.webp`} alt="" fill sizes="(min-width: 1024px) 20vw, 50vw" className="object-cover" />
             </motion.div>
           ))}

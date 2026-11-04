@@ -6,6 +6,7 @@ import { fadeScaleUp as fadeUp, staggerSlow as stagger, scrollToId } from "@/lib
 
 
 const cards = ["oneOnOne", "group", "consulting", "speaker"] as const;
+const spans = ["md:col-span-7", "md:col-span-5", "md:col-span-5", "md:col-span-7"];
 
 export function Services() {
   const t = useTranslations("Services");
@@ -30,14 +31,14 @@ export function Services() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
           variants={stagger}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 md:grid-cols-12 gap-8"
         >
-          {cards.map((card) => (
+          {cards.map((card, i) => (
             <motion.div
               key={card}
               variants={fadeUp}
               whileHover={{ y: -8 }}
-              className="group p-10 bg-bg-deep border border-accent-gold/20 hover:border-accent-gold/60 transition-all duration-500 rounded flex flex-col h-full shadow-2xl shadow-black/20"
+              className={`group p-10 bg-bg-deep border border-accent-gold/20 hover:border-accent-gold/60 transition-all duration-500 rounded-lg flex flex-col h-full shadow-[0_28px_60px_-30px_rgba(8,14,9,0.8)] ${spans[i]}`}
             >
               <div className="mb-8">
                 <span className="font-sans text-sm uppercase tracking-[0.18em] text-accent-gold mb-4 block">{t(`cards.${card}.type`)}</span>

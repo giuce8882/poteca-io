@@ -104,6 +104,7 @@ export function Hero() {
           style={{ opacity: videoOpacity }}
           className="absolute inset-0 z-0 w-full h-full object-cover"
           src="/videos/hero-scroll.mp4"
+          poster="/images/hero-poster.webp"
           playsInline
           muted
           autoPlay
@@ -116,7 +117,7 @@ export function Hero() {
         {/* Loading Overlay - now just waiting for video metadata which takes ~50ms */}
         {!loaded && (
           <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-bg-cream text-text-dark font-sans tracking-widest uppercase transition-opacity duration-700">
-            <span className="text-sm opacity-60 mb-4 animate-pulse">Entering Forest...</span>
+            <span className="text-sm opacity-60 mb-4 animate-pulse">{t("loading")}</span>
           </div>
         )}
 
@@ -130,7 +131,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
-            className="flex items-center gap-3 font-sans text-sm uppercase tracking-[0.2em] text-text-dark/70 mb-6"
+            className="flex items-center gap-3 font-sans text-sm uppercase tracking-[0.2em] text-text-dark mb-6 [text-shadow:0_0_14px_var(--color-bg-cream)]"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-green-mid"></span>
             {t("label")}
@@ -153,7 +154,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
-            className="font-sans text-lg text-text-medium max-w-[560px] leading-[1.75] mx-auto mb-10"
+            className="font-sans text-lg text-text-dark max-w-[560px] leading-[1.75] mx-auto mb-10 [text-shadow:0_0_14px_var(--color-bg-cream),0_0_32px_var(--color-bg-cream)]"
           >
             {t("subtitle")}
           </motion.p>

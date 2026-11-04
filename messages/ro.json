@@ -7,7 +7,8 @@
     "services": "Servicii",
     "gallery": "Galerie",
     "contact": "Contact",
-    "menu": "Meniu"
+    "menu": "Meniu",
+    "skip": "Salt la conținut"
   },
   "Hero": {
     "label": "Traseu de Vindecare prin Natură",
@@ -15,7 +16,8 @@
     "subtitle": "Platoul Luncanilor, Târsa. O călătorie spre tine, ghidată de ritmurile naturii",
     "cta1": "Explorează Poteca",
     "cta2": "Povestea",
-    "scroll": "Descoperă poteca"
+    "scroll": "Descoperă poteca",
+    "loading": "Intrăm în pădure..."
   },
   "Story": {
     "label": "Despre mine",

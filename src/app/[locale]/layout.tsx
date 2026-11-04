@@ -90,6 +90,7 @@ export default async function LocaleLayout({
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
+  const tNav = await getTranslations({ locale, namespace: "Nav" });
 
   return (
     <html
@@ -97,6 +98,7 @@ export default async function LocaleLayout({
       className={`${dmSerif.variable} ${cormorant.variable} ${lora.variable} ${outfit.variable} antialiased`}
     >
       <body className="grain flex flex-col min-h-screen bg-bg-cream text-text-dark">
+        <a href="#main-content" className="skip-link">{tNav("skip")}</a>
         <NextIntlClientProvider messages={messages}>
           <SmoothScroll>
             {children}

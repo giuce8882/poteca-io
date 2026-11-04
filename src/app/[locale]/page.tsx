@@ -20,7 +20,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       <Nav />
-      <main className="flex-grow w-full bg-bg-cream">
+      <main id="main-content" className="flex-grow w-full bg-bg-cream">
         <Hero />
         
         <Story />

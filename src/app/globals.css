@@ -94,3 +94,37 @@ h1, h2, h3, h4, h5, h6 {
   outline: 2px solid var(--color-accent-gold);
   outline-offset: 2px;
 }
+
+/* Typography polish: balanced headings, no orphaned words in paragraphs */
+h1, h2, h3, h4 { text-wrap: balance; }
+p, li, blockquote, figcaption { text-wrap: pretty; }
+
+/* Physical press feedback on plain buttons */
+button:not(:disabled):active { transform: scale(0.98); }
+
+/* Skip link (keyboard users) */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 10000;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-bg-deep);
+  color: var(--color-text-light);
+  font-family: var(--font-sans);
+  font-size: var(--text-label);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  transition: top 0.2s ease;
+}
+.skip-link:focus { top: 1rem; }
+
+/* Respect reduced-motion preference for CSS animations/transitions */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

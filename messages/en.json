@@ -7,7 +7,8 @@
     "services": "Services",
     "gallery": "Gallery",
     "contact": "Contact",
-    "menu": "Menu"
+    "menu": "Menu",
+    "skip": "Skip to content"
   },
   "Hero": {
     "label": "Healing Nature Trail",
@@ -15,7 +16,8 @@
     "subtitle": "Luncanilor Plateau, Târsa. A journey toward yourself, guided by the gentle rhythm of nature",
     "cta1": "Explore the Trail",
     "cta2": "The Story",
-    "scroll": "Discover the trail"
+    "scroll": "Discover the trail",
+    "loading": "Entering the forest..."
   },
   "Story": {
     "label": "About me",
