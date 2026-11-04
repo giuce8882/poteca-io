@@ -57,7 +57,7 @@ export function Nav() {
       transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1] }}
       className={clsx(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-[cubic-bezier(0.25,0.1,0.25,1)] px-6 py-6 md:px-12",
-        dark ? "bg-bg-deep/60 backdrop-blur-xl border-b border-white/5 py-4" : "bg-transparent"
+        dark ? "bg-bg-deep/90 backdrop-blur-xl border-b border-accent-gold/15 py-4" : "bg-transparent"
       )}
     >
       <div className="max-w-[1440px] mx-auto flex items-center justify-between">
