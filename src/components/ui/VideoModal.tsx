@@ -46,7 +46,7 @@ export function VideoModal({ isOpen, onClose, videoId }: VideoModalProps) {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             onClick={onClose}
-            className="absolute top-6 right-6 z-[110] w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white border border-white/10 cursor-pointer"
+            className="absolute top-6 right-6 z-[110] w-12 h-12 flex items-center justify-center rounded-full bg-text-light/10 hover:bg-text-light/20 transition-colors text-text-light border border-white/10 cursor-pointer"
             aria-label="Close"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -61,7 +61,7 @@ export function VideoModal({ isOpen, onClose, videoId }: VideoModalProps) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative z-[105] w-full max-w-[450px] aspect-[9/16] shadow-2xl rounded-xl overflow-hidden bg-black"
+            className="relative z-[105] w-full max-w-[450px] aspect-[9/16] shadow-2xl rounded-xl overflow-hidden bg-bg-deep"
           >
             <iframe
               src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}

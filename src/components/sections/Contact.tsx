@@ -67,7 +67,7 @@ export function Contact() {
           variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
           className="flex flex-col"
         >
-          <motion.span variants={fadeUp} className="font-sans text-label uppercase tracking-[0.16em] text-text-light mb-6 block">
+          <motion.span variants={fadeUp} className="font-sans text-label uppercase tracking-[0.18em] text-text-light mb-6 block">
             {t("label")}
           </motion.span>
           <motion.h2 variants={fadeUp} className="font-display text-h1 leading-[1.1] mb-8 pb-6 border-b border-text-light/10 max-w-max">
@@ -79,15 +79,15 @@ export function Contact() {
 
           <motion.div variants={fadeUp} className="flex flex-col gap-8 font-serif text-h3 text-text-light">
             <div>
-              <span className="font-sans text-sm uppercase tracking-widest text-accent-gold block mb-2">{t("phoneLabel")}</span>
+              <span className="font-sans text-sm uppercase tracking-[0.18em] text-accent-gold block mb-2">{t("phoneLabel")}</span>
               <a href="tel:+40722246178" className="hover:text-accent-gold transition-colors duration-300">+40 722 246 178</a>
             </div>
             <div>
-              <span className="font-sans text-sm uppercase tracking-widest text-accent-gold block mb-2">{t("emailLabel")}</span>
+              <span className="font-sans text-sm uppercase tracking-[0.18em] text-accent-gold block mb-2">{t("emailLabel")}</span>
               <a href="mailto:oana@poteca.io" className="hover:text-accent-gold transition-colors duration-300">oana@poteca.io</a>
             </div>
             <div>
-              <span className="font-sans text-sm uppercase tracking-widest text-accent-gold block mb-2">Location</span>
+              <span className="font-sans text-sm uppercase tracking-[0.18em] text-accent-gold block mb-2">{t("locationLabel")}</span>
               <span className="text-text-light">{t("location")}</span>
             </div>
           </motion.div>
@@ -103,49 +103,49 @@ export function Contact() {
         >
           <form className="flex flex-col gap-6 w-full max-w-[500px] ml-auto" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-2">
-              <label htmlFor="contact-name" className="font-sans text-sm uppercase tracking-widest text-accent-gold">{t("form.name")}</label>
+              <label htmlFor="contact-name" className="font-sans text-sm uppercase tracking-[0.18em] text-accent-gold">{t("form.name")}</label>
               <input 
                 id="contact-name"
                 type="text" 
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="w-full bg-transparent border-b border-text-light/10 focus:border-accent-gold py-6 outline-none font-serif text-2xl md:text-3xl text-text-light transition-all duration-500 placeholder-text-light/60"
+                className="w-full bg-transparent border-b border-text-light/10 focus:border-accent-gold py-6 outline-none font-serif text-2xl md:text-3xl text-text-light transition-all duration-500 placeholder-accent-stone"
                 placeholder="..." 
               />
             </div>
             <div className="flex flex-col gap-2 mt-4">
-              <label htmlFor="contact-email" className="font-sans text-sm uppercase tracking-widest text-accent-gold">{t("form.contact")}</label>
+              <label htmlFor="contact-email" className="font-sans text-sm uppercase tracking-[0.18em] text-accent-gold">{t("form.contact")}</label>
               <input 
                 id="contact-email"
                 type="text" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full bg-transparent border-b border-text-light/10 focus:border-accent-gold py-6 outline-none font-serif text-2xl md:text-3xl text-text-light transition-all duration-500 placeholder-text-light/60"
+                className="w-full bg-transparent border-b border-text-light/10 focus:border-accent-gold py-6 outline-none font-serif text-2xl md:text-3xl text-text-light transition-all duration-500 placeholder-accent-stone"
                 placeholder="..." 
               />
             </div>
             <div className="flex flex-col gap-2 mt-4">
-              <label htmlFor="contact-message" className="font-sans text-sm uppercase tracking-widest text-accent-gold">{t("form.message")}</label>
+              <label htmlFor="contact-message" className="font-sans text-sm uppercase tracking-[0.18em] text-accent-gold">{t("form.message")}</label>
               <textarea 
                 id="contact-message"
                 rows={3}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
-                className="w-full bg-transparent border-b border-text-light/10 focus:border-accent-gold py-6 outline-none font-serif text-2xl md:text-3xl text-text-light transition-all duration-500 resize-none placeholder-text-light/60"
+                className="w-full bg-transparent border-b border-text-light/10 focus:border-accent-gold py-6 outline-none font-serif text-2xl md:text-3xl text-text-light transition-all duration-500 resize-none placeholder-accent-stone"
                 placeholder="..." 
               />
             </div>
             
             {status === "success" && (
-              <div className="text-accent-gold font-sans text-sm tracking-widest uppercase mt-4">
+              <div className="text-accent-gold font-sans text-sm tracking-[0.18em] uppercase mt-4">
                 Message sent successfully!
               </div>
             )}
             {status === "error" && (
-              <div className="text-red-400 font-sans text-sm tracking-widest uppercase mt-4">
+              <div className="text-red-400 font-sans text-sm tracking-[0.18em] uppercase mt-4">
                 Error sending message. Please try again.
               </div>
             )}
@@ -154,9 +154,9 @@ export function Contact() {
               <button 
                 type="submit" 
                 disabled={status === "loading" || status === "success"}
-                className="bg-accent-gold text-bg-deep hover:bg-text-light disabled:opacity-50 transition-colors duration-300 px-12 py-5 font-sans uppercase tracking-[0.15em] text-sm font-medium rounded-full cursor-pointer"
+                className="bg-accent-gold text-bg-deep hover:bg-text-light disabled:opacity-50 transition-colors duration-300 px-12 py-5 font-sans uppercase tracking-[0.18em] text-sm font-medium rounded-full cursor-pointer"
               >
-                {status === "loading" ? "Sending..." : t("form.submit")}
+                {status === "loading" ? t("sending") : t("form.submit")}
               </button>
             </div>
           </form>

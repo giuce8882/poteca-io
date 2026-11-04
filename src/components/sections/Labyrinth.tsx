@@ -3,18 +3,13 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { fadeUp, stagger, view, scrollToId } from "@/lib/motion";
 
 type Item = { title: string; text: string };
 type WhereItem = Item & { tag: string };
 type Stat = { value: string; label: string };
 type Step = { n: string; title: string; text: string };
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] as const } },
-};
-const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.12 } } };
-const view = { once: true, amount: 0.2 } as const;
 
 const label = "font-sans text-sm uppercase tracking-[0.18em] text-accent-gold";
 const card = "p-8 bg-bg-deep border border-accent-gold/20 rounded";
@@ -37,7 +32,7 @@ export function Labyrinth() {
   const steps = t.raw("steps.items") as Step[];
   const where = t.raw("where.items") as WhereItem[];
   const inviteLines = t.raw("invite.lines") as string[];
-  const goContact = () => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  const goContact = () => scrollToId("contact");
 
   return (
     <section id="labyrinth" className="w-full bg-bg-deep text-text-light py-32 overflow-hidden">
@@ -54,7 +49,7 @@ export function Labyrinth() {
               <Image src="/images/labyrinth/night-01.webp" alt={t("nightCaption")} fill sizes="(min-width: 768px) 60vw, 100vw" className="object-cover" />
             </div>
             <div className="relative aspect-[3/4] md:aspect-auto overflow-hidden rounded">
-              <Image src="/images/labyrinth/night-02.webp" alt={t("nightCaption")} fill sizes="(min-width: 768px) 40vw, 100vw" className="object-cover" />
+              <Image src="/images/labyrinth/night-02.webp" alt="" fill sizes="(min-width: 768px) 40vw, 100vw" className="object-cover" />
             </div>
           </motion.div>
           <p className="mt-4 text-center font-serif italic text-body text-text-light">{t("nightCaption")}</p>
@@ -171,7 +166,7 @@ export function Labyrinth() {
               playsInline
               preload="none"
               poster="/images/labyrinth/mobile-poster.webp"
-              className="w-full aspect-[464/832] rounded bg-black object-cover"
+              className="w-full aspect-[464/832] rounded bg-bg-deep object-cover"
             >
               <source src="/videos/labyrinth-mobile.mp4" type="video/mp4" />
             </video>
@@ -208,7 +203,7 @@ export function Labyrinth() {
           <div className="grid grid-cols-2 gap-3">
             {[1, 2, 3, 4].map((n) => (
               <div key={n} className="relative aspect-[4/3] overflow-hidden rounded">
-                <Image src={`/images/labyrinth/finger-0${n}.webp`} alt={t("finger.title")} fill sizes="(min-width: 1024px) 30vw, 50vw" className="object-cover" />
+                <Image src={`/images/labyrinth/finger-0${n}.webp`} alt={n === 1 ? t("finger.title") : ""} fill sizes="(min-width: 1024px) 30vw, 50vw" className="object-cover" />
               </div>
             ))}
           </div>
@@ -224,6 +219,11 @@ export function Labyrinth() {
           <motion.button variants={fadeUp} onClick={goContact} className="px-10 py-4 bg-accent-gold text-bg-deep hover:bg-text-light transition-colors duration-300 font-sans text-sm uppercase tracking-[0.18em] rounded cursor-pointer">
             {t("invite.cta")}
           </motion.button>
+          <motion.p variants={fadeUp} className="mt-8 font-serif text-body-lg text-text-light">
+            {t("invite.contactLabel")} ·{" "}
+            <a href="mailto:oana@poteca.io" className="underline decoration-accent-gold underline-offset-4 hover:text-accent-gold">oana@poteca.io</a> ·{" "}
+            <a href="tel:+40722246178" className="underline decoration-accent-gold underline-offset-4 hover:text-accent-gold">+40 722 246 178</a>
+          </motion.p>
           <p className="mt-12 font-sans text-sm text-text-light">{t("sources")}</p>
         </motion.div>
       </div>

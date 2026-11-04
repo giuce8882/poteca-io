@@ -53,7 +53,7 @@ export function Story() {
                 {/* Ripple Effect */}
                 <div className="absolute inset-0 rounded-full bg-accent-gold/30 animate-ping opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
-                <div className="relative w-20 h-20 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white transition-all duration-500 group-hover:bg-accent-gold group-hover:border-accent-gold group-hover:scale-110 shadow-xl">
+                <div className="relative w-20 h-20 flex items-center justify-center rounded-full bg-text-light/20 backdrop-blur-md border border-text-light/30 text-text-light transition-all duration-500 group-hover:bg-accent-gold group-hover:border-accent-gold group-hover:scale-110 shadow-xl">
                   <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M8 5v14l11-7z" />
                   </svg>

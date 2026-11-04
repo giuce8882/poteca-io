@@ -2,12 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { fadeScaleUp as fadeUp, staggerSlow as stagger, scrollToId } from "@/lib/motion";
 
-const fadeUp = {
-  hidden: { opacity: 0, scale: 0.95, y: 40 },
-  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] as const } },
-};
-const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.15 } } };
 
 const cards = ["oneOnOne", "group", "consulting", "speaker"] as const;
 
@@ -26,7 +22,7 @@ export function Services() {
         >
           <motion.span variants={fadeUp} className="font-sans text-sm uppercase tracking-[0.18em] text-accent-gold mb-6 block">{t("label")}</motion.span>
           <motion.h2 variants={fadeUp} className="font-display text-h1 leading-[1.1] mb-8">{t("title")}</motion.h2>
-          <motion.p variants={fadeUp} className="font-serif text-body-lg text-text-light max-w-[600px] leading-relaxed">{t("intro")}</motion.p>
+          <motion.p variants={fadeUp} className="font-serif text-body-lg text-text-light max-w-[600px] leading-[1.75]">{t("intro")}</motion.p>
         </motion.div>
 
         <motion.div
@@ -50,7 +46,7 @@ export function Services() {
               </div>
               <div className="mt-auto pt-4">
                 <button
-                  onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                  onClick={() => scrollToId("contact")}
                   className="w-full py-4 border border-accent-gold text-accent-gold hover:bg-accent-gold hover:text-bg-deep transition-colors duration-300 font-sans uppercase text-sm tracking-[0.18em] rounded cursor-pointer"
                 >
                   {t("cta")}

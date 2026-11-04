@@ -6,7 +6,8 @@
     "journal": "Practica Întoarcerii",
     "services": "Servicii",
     "gallery": "Galerie",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": "Meniu"
   },
   "Hero": {
     "label": "Traseu de Vindecare prin Natură",
@@ -105,7 +106,9 @@
       "contact": "Telefon sau email",
       "message": "Mesajul tău",
       "submit": "Trimite"
-    }
+    },
+    "locationLabel": "Locație",
+    "sending": "Se trimite..."
   },
   "Footer": {
     "left": "© 2026 Poteca.io",
@@ -114,7 +117,7 @@
   },
   "Meta": {
     "title": "Poteca.io — Forest Bathing Retreat & Nature Therapy Romania",
-    "description": "Poteca Vindecătoare pe Platoul Luncanilor, Târsa. Terapie prin natură (Shinrin-Yoku Transylvania), reconectare profundă și experiențe imersive."
+    "description": "Poteca Vindecătoare Walden pe Platoul Luncanilor, Târsa. Terapie prin natură (Shinrin-Yoku), meditație în labirint, sesiuni de forest bathing și facilitare de grup."
   },
   "Labyrinth": {
     "label": "Meditație în mers",
@@ -280,7 +283,8 @@
         "Accesibile tuturor",
         "Pentru stare de bine, relaxare, reflexie și creativitate"
       ],
-      "cta": "Scrie-ne"
+      "cta": "Scrie-ne",
+      "contactLabel": "Contact: Oana Suciu"
     },
     "sources": "Surse: BBC Travel, The Labyrinth Society, WebMD, St. Joseph’s Health Care. Date: Chestionarul Labyrinth Walk (Rhodes, 2019)."
   },

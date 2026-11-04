@@ -6,7 +6,8 @@
     "journal": "Sit Spot Journal",
     "services": "Services",
     "gallery": "Gallery",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": "Menu"
   },
   "Hero": {
     "label": "Healing Nature Trail",
@@ -105,7 +106,9 @@
       "contact": "Phone or email",
       "message": "Your message",
       "submit": "Send"
-    }
+    },
+    "locationLabel": "Location",
+    "sending": "Sending..."
   },
   "Footer": {
     "left": "© 2026 Poteca.io",
@@ -114,7 +117,7 @@
   },
   "Meta": {
     "title": "Poteca.io — Forest Bathing Retreat & Nature Therapy Romania",
-    "description": "Healing Nature Trail in the Luncanilor Plateau, Târsa. Guided forest bathing (Shinrin-Yoku Transylvania), immersive nature experiences, and reconnection with yourself."
+    "description": "Walden Healing Nature Trail on the Luncanilor Plateau, Târsa. Guided forest bathing (Shinrin-Yoku), labyrinth meditation, group facilitation and nature-based services."
   },
   "Labyrinth": {
     "label": "A walking meditation",
@@ -280,7 +283,8 @@
         "Accessible to all",
         "For wellbeing, relaxation, reflection and creativity"
       ],
-      "cta": "Get in touch"
+      "cta": "Get in touch",
+      "contactLabel": "Contact: Oana Suciu"
     },
     "sources": "Sources: BBC Travel, The Labyrinth Society, WebMD, St. Joseph’s Health Care. Data: Labyrinth Walk Questionnaire (Rhodes, 2019)."
   },

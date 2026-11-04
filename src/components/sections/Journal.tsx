@@ -3,12 +3,8 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { fadeUp, stagger, scrollToId } from "@/lib/motion";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] as const } },
-};
-const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.12 } } };
 
 export function Journal() {
   const t = useTranslations("Journal");
@@ -26,7 +22,7 @@ export function Journal() {
           </motion.div>
           {[1, 3].map((n) => (
             <motion.div key={n} variants={fadeUp} className="relative aspect-square overflow-hidden rounded">
-              <Image src={`/images/journal/journal-0${n}.webp`} alt={t("title")} fill sizes="(min-width: 1024px) 20vw, 50vw" className="object-cover" />
+              <Image src={`/images/journal/journal-0${n}.webp`} alt="" fill sizes="(min-width: 1024px) 20vw, 50vw" className="object-cover" />
             </motion.div>
           ))}
         </motion.div>
@@ -54,7 +50,7 @@ export function Journal() {
 
           <motion.button
             variants={fadeUp}
-            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+            onClick={() => scrollToId("contact")}
             className="px-10 py-4 bg-bg-deep text-text-light hover:bg-green-deep transition-colors duration-300 font-sans text-sm uppercase tracking-[0.18em] rounded cursor-pointer"
           >
             {t("cta")}
