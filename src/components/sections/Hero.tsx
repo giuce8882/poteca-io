@@ -8,6 +8,7 @@ export function Hero() {
   const t = useTranslations("Hero");
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const wrapRef = useRef<HTMLDivElement>(null);
   const [loaded, setLoaded] = useState(false);
 
   // Ready signal with fallback for iOS Low Power Mode
@@ -70,6 +71,67 @@ export function Hero() {
     return () => unsubscribe();
   }, [loaded, scrollYProgress]);
 
+  // Browsers (Brave especially) only buffer a few seconds of this large video, so scrubbing
+  // waits on the network. Download the whole file in the background and swap to a local copy
+  // (same file, same quality) so every seek is instant. Scrubbing keeps working meanwhile.
+  useEffect(() => {
+    if (!loaded) return;
+    const wrap = wrapRef.current;
+    const first = videoRef.current;
+    if (!wrap || !first) return;
+
+    // Don't double the data use on phones or when the visitor asked to save data.
+    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+    if (connection?.saveData || window.matchMedia("(pointer: coarse)").matches) return;
+
+    let cancelled = false;
+    let objectUrl: string | undefined;
+
+    (async () => {
+      try {
+        const res = await fetch("/videos/hero-scroll.mp4");
+        if (!res.ok) return;
+        const blob = await res.blob();
+        if (cancelled) return;
+        objectUrl = URL.createObjectURL(blob);
+
+        const local = document.createElement("video");
+        local.className = first.className;
+        local.muted = true;
+        local.playsInline = true;
+        local.preload = "auto";
+        local.setAttribute("aria-hidden", "true");
+        local.style.visibility = "hidden";
+        local.src = objectUrl;
+        wrap.appendChild(local);
+
+        await new Promise<void>((resolve, reject) => {
+          local.addEventListener("loadeddata", () => resolve(), { once: true });
+          local.addEventListener("error", () => reject(new Error("local video failed")), { once: true });
+        });
+        if (cancelled) return;
+
+        // Land on the exact frame the visitor is looking at, then swap without a flash.
+        local.currentTime = first.currentTime;
+        await new Promise<void>((resolve) => local.addEventListener("seeked", () => resolve(), { once: true }));
+        if (cancelled) return;
+        local.currentTime = videoRef.current?.currentTime ?? local.currentTime;
+        local.style.visibility = "visible";
+        first.style.visibility = "hidden";
+        videoRef.current = local;
+        first.removeAttribute("src");
+        first.load();
+      } catch {
+        // Keep streaming from the network if the local copy fails.
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
+    };
+  }, [loaded]);
+
   // Smoother scroll-based opacity for text elements
   // The text fades out as we start diving (0 -> 15%)
   // It stays invisible during the chaotic zoom transition (15% -> 35%)
@@ -99,16 +161,17 @@ export function Hero() {
       <div className="sticky top-0 w-full h-[100vh] overflow-hidden bg-bg-cream">
         
         {/* Video for Scroll scrub */}
-        <motion.video
-          ref={videoRef}
-          style={{ opacity: videoOpacity }}
-          className="absolute inset-0 z-0 w-full h-full object-cover"
-          src="/videos/hero-scroll.mp4"
-          playsInline
-          muted
-          autoPlay
-          preload="auto"
-        />
+        <motion.div ref={wrapRef} style={{ opacity: videoOpacity }} className="absolute inset-0 z-0">
+          <video
+            ref={videoRef}
+            className="absolute inset-0 w-full h-full object-cover"
+            src="/videos/hero-scroll.mp4"
+            playsInline
+            muted
+            autoPlay
+            preload="auto"
+          />
+        </motion.div>
 
         {/* Top Mask to smoothly blend video into the light background */}
         <div className="absolute inset-x-0 top-0 h-[65vh] z-10 pointer-events-none bg-gradient-to-b from-bg-cream via-bg-cream/95 to-transparent" />
