@@ -12,6 +12,7 @@ import { Services } from "@/components/sections/Services";
 import { Contact } from "@/components/sections/Contact";
 import { Gallery } from "@/components/sections/Gallery";
 import { ParallaxImage } from "@/components/effects/ParallaxImage";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const resolvedParams = await params;
@@ -48,6 +49,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

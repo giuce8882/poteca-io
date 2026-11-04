@@ -104,7 +104,6 @@ export function Hero() {
           style={{ opacity: videoOpacity }}
           className="absolute inset-0 z-0 w-full h-full object-cover"
           src="/videos/hero-scroll.mp4"
-          poster="/images/hero-poster.webp"
           playsInline
           muted
           autoPlay
@@ -126,8 +125,6 @@ export function Hero() {
           style={{ opacity: contentOpacity, y: contentY }}
           className="absolute inset-0 z-20 flex flex-col items-center justify-start pt-[18vh] text-center px-6"
         >
-          {/* Cream halo so text and buttons stay legible over the green globe / forest */}
-          <div aria-hidden className="pointer-events-none absolute left-1/2 top-[6vh] -z-10 h-[80vh] w-[min(1100px,100%)] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(245,240,235,0.92)_0%,rgba(245,240,235,0.72)_45%,transparent_72%)]" />
           {/* Label */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
