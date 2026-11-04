@@ -130,7 +130,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
-            className="flex items-center gap-3 font-sans text-[10px] sm:text-xs uppercase tracking-[0.2em] text-text-dark/70 mb-6"
+            className="flex items-center gap-3 font-sans text-sm uppercase tracking-[0.2em] text-text-dark/70 mb-6"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-green-mid"></span>
             {t("label")}
@@ -187,7 +187,7 @@ export function Hero() {
            style={{ opacity: finalTextOpacity, y: finalTextY }}
            className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center px-6 pointer-events-none"
         >
-           <span className="font-sans text-xs uppercase tracking-[0.2em] text-text-light/80 mb-6 drop-shadow-md">
+           <span className="font-sans text-sm uppercase tracking-[0.2em] text-text-light mb-6 drop-shadow-md">
              POTECA VINDECĂTOARE
            </span>
            <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.1] text-text-light drop-shadow-lg">

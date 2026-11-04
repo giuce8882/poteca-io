@@ -60,7 +60,7 @@ export function Story() {
                 </div>
                 
                 {/* Label that appears on hover */}
-                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 font-sans text-[10px] uppercase tracking-[0.2em] text-white opacity-0 group-hover:opacity-100 transition-all duration-500 whitespace-nowrap bg-bg-deep/40 px-3 py-1 rounded backdrop-blur-sm">
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 font-sans text-sm uppercase tracking-[0.2em] text-text-light opacity-0 group-hover:opacity-100 transition-all duration-500 whitespace-nowrap bg-bg-deep/40 px-3 py-1 rounded backdrop-blur-sm">
                   {t("watchStory")}
                 </span>
               </div>

@@ -17,6 +17,7 @@ const GALLERY_IMAGES = [
   "/images/gallery/media__1776852809348.jpg",
   "/images/gallery/labyrinth.jpg",
   "/images/gallery/forest_sun.jpg",
+  ...Array.from({ length: 23 }, (_, i) => `/images/gallery/oct-${String(i + 1).padStart(2, "0")}.webp`),
 ];
 
 export function Gallery() {
@@ -167,7 +168,7 @@ export function Gallery() {
             </button>
 
             {/* Image Counter */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 font-sans text-xs tracking-[0.2em] text-text-light/50">
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 font-sans text-sm tracking-[0.2em] text-text-light">
               {selectedImageIndex + 1} / {GALLERY_IMAGES.length}
             </div>
 

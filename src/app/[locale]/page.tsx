@@ -6,7 +6,9 @@ import { Hero } from "@/components/sections/Hero";
 import { Story } from "@/components/sections/Story";
 import { HealingTrail } from "@/components/sections/HealingTrail";
 import { Benefits } from "@/components/sections/Benefits";
-import { Experiences } from "@/components/sections/Experiences";
+import { Labyrinth } from "@/components/sections/Labyrinth";
+import { Journal } from "@/components/sections/Journal";
+import { Services } from "@/components/sections/Services";
 import { Contact } from "@/components/sections/Contact";
 import { Gallery } from "@/components/sections/Gallery";
 import { ParallaxImage } from "@/components/effects/ParallaxImage";
@@ -38,7 +40,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         
         <Benefits />
         
-        <Experiences />
+        <Labyrinth />
+        <Journal />
+        <Services />
         <Gallery />
         <Contact />
 

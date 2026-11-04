@@ -31,17 +31,25 @@ export function HealingTrail() {
            variants={fadeUp}
            className="max-w-[800px] mb-24"
         >
-          <span className="font-sans text-label uppercase tracking-[0.16em] text-text-dark/70 mb-8 block">
+          <span className="font-sans text-sm uppercase tracking-[0.18em] text-accent-gold mb-8 block">
             {t("label")}
           </span>
           <h2 className="font-display text-h1 text-text-light leading-[1.1] mb-10 pb-6 border-b border-text-light/10 max-w-max">
             {t("title")}
           </h2>
-          <div className="flex flex-col gap-6 font-serif text-body-lg text-text-light/80 leading-relaxed font-light">
+          <div className="flex flex-col gap-6 font-serif text-body-lg text-text-light leading-relaxed">
             <p>{t("body1")}</p>
             <p>{t("body2")}</p>
             <p>{t("body3")}</p>
           </div>
+          <a
+            href="https://www.potecawalden.ro"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 inline-flex items-center gap-3 font-sans text-sm uppercase tracking-[0.18em] text-accent-gold border-b border-accent-gold/60 pb-1 hover:text-text-light hover:border-text-light transition-colors duration-300"
+          >
+            {t("website")} <span aria-hidden>↗</span>
+          </a>
         </motion.div>
 
         {/* Spaces Subtitle */}
@@ -76,7 +84,7 @@ export function HealingTrail() {
               <h4 className="font-display text-h3 text-text-light mb-4 group-hover:text-accent-gold transition-colors duration-500">
                 {t(`spaces.${space}.title`)}
               </h4>
-              <p className="font-serif text-body text-text-light/70 leading-relaxed">
+              <p className="font-serif text-body text-text-light leading-relaxed">
                 {t(`spaces.${space}.description`)}
               </p>
             </motion.div>
@@ -104,7 +112,7 @@ export function HealingTrail() {
             <h3 className="font-display text-h2 text-accent-gold mb-6">
               {t("guidesTitle")}
             </h3>
-            <p className="font-serif text-body-lg text-text-light/80 leading-relaxed font-light">
+            <p className="font-serif text-body-lg text-text-light leading-relaxed">
               {t("guidesText")}
             </p>
           </div>

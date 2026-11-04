@@ -1,11 +1,12 @@
 {
   "Nav": {
     "story": "The Story",
-    "healingTrail": "Healing Trail",
-    "benefits": "Benefits",
-    "experiences": "Experiences",
-    "contact": "Contact",
-    "gallery": "Gallery"
+    "healingTrail": "Walden Healing Nature Trail",
+    "labyrinth": "Labyrinth",
+    "journal": "Sit Spot Journal",
+    "services": "Services",
+    "gallery": "Gallery",
+    "contact": "Contact"
   },
   "Hero": {
     "label": "Healing Nature Trail",
@@ -22,7 +23,7 @@
     "body2": "The motto that accompanied me every step along the way has always been the same: \"Don't go where the path may lead, go where there is no path and leave a trail\"",
     "body3": "And that's what I did. I left trails in areas that 'the world' said were impossible or crazy - the first hemp seed processing factory in Europe, cultivation and processing of hemp fibers for the automotive industry, houses made of hemp and lime, a kindergarten in the forest, a democratic free school.",
     "body4": "Tourism, real estate, food industry, alternative education, natural constructions, each experience generated a new trail. And only now, after 20 years, have I realised that all these trails actually form a single one, my life.",
-    "body5": "Today, I want to share everything I have lived and learned, as a certified Healing Nature Guide, on the healing trails of Târsa, in the heart of the Luncanilor plateau.",
+    "body5": "Today, I want to share everything I have lived and learned, as a certified Healing Nature Guide during gently guided forest bathing sessions in Târsa as well as a facilitator for labyrinth meditations, forest bathing sessions or forest school activities with children at various retreats, festivals or nature oriented team events organised by corporations.",
     "quote": "The trail is actually me.",
     "watchStory": "Watch story"
   },
@@ -52,7 +53,8 @@
         "title": "Bridges & Crossings",
         "description": "Symbols of transition, each crossing brings you closer to your inner self."
       }
-    }
+    },
+    "website": "Discover potecawalden.ro"
   },
   "Benefits": {
     "label": "SHINRIN-YOKU TRANSYLVANIA",
@@ -78,31 +80,6 @@
       "clarity": {
         "title": "Clarity and focus",
         "description": "Just 15 minutes spent in nature significantly improve mental clarity and the ability to concentrate."
-      }
-    }
-  },
-  "Experiences": {
-    "label": "EXPERIENCES",
-    "title": "Choose your trail",
-    "intro": "Every experience is different because every person is different. There are no rigid programmes, only the invitation to be present.",
-    "cards": {
-      "walks": {
-        "title": "Guided Walks",
-        "type": "Individual or group",
-        "description": "A slow, guided walk on the Healing Trail, with nature connection exercises, breath work and introspection. Duration and pace adapt to the group.",
-        "cta": "Call to book"
-      },
-      "online": {
-        "title": "INDIVIDUAL, FROM ANYWHERE",
-        "type": "Online guidance",
-        "description": "For those who cannot reach Târsa, a hybrid guided nature session, me in the forest, you anywhere. Healing nature comes to you.",
-        "cta": "Call to book"
-      },
-      "immersive": {
-        "title": "Days in Târsa",
-        "type": "IMMERSIVE EXPERIENCE",
-        "description": "I invite you to my home. Together with Alex, Max, and Ida, we offer a refuge, days where you step into another world. Village life with forest walks, playing with the children, small tasks in the garden. No planning, no structured therapy programme.\n\nWhen asked \"What is your qualification?\" — the answer is simply \"Life.\"",
-        "cta": "Discover the experience"
       }
     }
   },
@@ -138,5 +115,224 @@
   "Meta": {
     "title": "Poteca.io — Forest Bathing Retreat & Nature Therapy Romania",
     "description": "Healing Nature Trail in the Luncanilor Plateau, Târsa. Guided forest bathing (Shinrin-Yoku Transylvania), immersive nature experiences, and reconnection with yourself."
+  },
+  "Labyrinth": {
+    "label": "A walking meditation",
+    "title": "The Labyrinth",
+    "subtitle": "The healing walk along a single winding path",
+    "nightCaption": "The labyrinth by candlelight",
+    "what": {
+      "title": "What is a labyrinth?",
+      "kicker": "An ancient sacred tool",
+      "quote": "There are many forms of labyrinths all over the world. Some people use them as a tool for prayer, meditation or healing. It is a place where you can gain clarity about your life.",
+      "cite": "The Labyrinth Society",
+      "intro": "A wellness labyrinth is a single winding path that leads, unfailingly, to the centre and back again. No dead ends, no wrong turns. You cannot get lost.",
+      "vsLabyrinth": "Labyrinth",
+      "vsLabyrinthText": "A single path. A sure way to the centre and back.",
+      "vsMaze": "Maze",
+      "vsMazeText": "Many paths, dead ends and the risk of getting lost."
+    },
+    "history": {
+      "title": "An ancient practice",
+      "intro": "The labyrinth has been used for over 4,000 years, appearing in many cultures and on every continent.",
+      "items": [
+        {
+          "title": "The Cretan pattern",
+          "text": "A single path forming seven concentric circuits around the centre — the best-known form being the labyrinth of Knossos."
+        },
+        {
+          "title": "The Chartres pattern",
+          "text": "Eleven circuits, made famous by the French cathedral of Chartres. In the Middle Ages, nearly 25% of cathedrals had a labyrinth."
+        },
+        {
+          "title": "Nordic stone labyrinths",
+          "text": "Built along the shores of the Baltic Sea, using natural stones set into the ground."
+        },
+        {
+          "title": "Tohono O’odham",
+          "text": "“Man in the Maze” — a sacred pattern from Native American tribal art."
+        }
+      ]
+    },
+    "why": {
+      "title": "Why walk a labyrinth?",
+      "quote": "The labyrinth is a safe path in uncertain times.",
+      "cite": "Rev. Dr. Lauren Artress, founder of Veriditas",
+      "text": "Walking a labyrinth is a meditation in motion. The pattern holds you while the mind quiets down. Body and breath fall into the same rhythm, and attention gently returns to the present."
+    },
+    "stats": {
+      "title": "The healing power of walking",
+      "items": [
+        {
+          "value": "86%",
+          "label": "more relaxed"
+        },
+        {
+          "value": "83%",
+          "label": "more at peace"
+        },
+        {
+          "value": "80%",
+          "label": "more reflective"
+        },
+        {
+          "value": "78%",
+          "label": "more centred"
+        },
+        {
+          "value": "71%",
+          "label": "less stressed"
+        },
+        {
+          "value": "70%",
+          "label": "less anxious"
+        }
+      ],
+      "note": "Effects reported in a survey of 1,250 people who walked a labyrinth.",
+      "quote": "The labyrinth teaches us to accept the path and its obstacles, to be in flow with all that is.",
+      "cite": "Sydney Labyrinth"
+    },
+    "effects": {
+      "title": "What happens in body and mind",
+      "body": {
+        "title": "In the body",
+        "items": [
+          "Slower breathing and heart rate",
+          "Lower blood pressure",
+          "Reduced cortisol (the stress hormone)",
+          "Eased muscle tension and chronic pain"
+        ]
+      },
+      "mind": {
+        "title": "In the mind",
+        "items": [
+          "A calm, meditative state",
+          "Less anxiety and rumination",
+          "Greater clarity, creativity and focus",
+          "Self-compassion, connection, meaning"
+        ]
+      }
+    },
+    "steps": {
+      "title": "How to walk a labyrinth",
+      "intro": "Three simple stages, no experience needed.",
+      "items": [
+        {
+          "n": "01",
+          "title": "Release",
+          "text": "Enter slowly. Let thoughts and expectations go with each step. Follow the turns without hurrying."
+        },
+        {
+          "n": "02",
+          "title": "Receive",
+          "text": "Pause at the centre. Breathe. Stay as long as you like — it is a place for listening."
+        },
+        {
+          "n": "03",
+          "title": "Return",
+          "text": "Walk back along the same path, carrying with you the calm and any insights that have emerged."
+        }
+      ]
+    },
+    "still": {
+      "title": "For those who find it hard to sit still",
+      "quote": "Many people, like me, have “failed” at sitting meditation. A walking meditation produces the same inner awareness.",
+      "cite": "Rev. Dr. Lauren Artress, Veriditas",
+      "text": "A body in motion gives a restless mind something to do. Attention settles on the path, the breath, the steps — and the meditative state arises on its own.",
+      "videoCaption": "The mobile labyrinth, brought to retreats and team-building events"
+    },
+    "where": {
+      "title": "Where we can build a labyrinth",
+      "intro": "Labyrinths can be built in town squares, parks, office buildings, urban gardens and quiet corners of the forest.",
+      "items": [
+        {
+          "title": "In the forest",
+          "tag": "Wild and quiet",
+          "text": "A perfect companion for forest bathing and time spent in nature."
+        },
+        {
+          "title": "Urban spaces",
+          "tag": "City spaces",
+          "text": "A quiet way to pause and recentre yourself in the midst of a busy life."
+        },
+        {
+          "title": "Garden labyrinths",
+          "tag": "Your own patch of land",
+          "text": "Marked out with stones, string or simply mown into the grass."
+        },
+        {
+          "title": "The Chartres pattern",
+          "tag": "Inner courtyards",
+          "text": "The medieval design, still walked as a mini-pilgrimage at the cathedral near Paris."
+        }
+      ]
+    },
+    "finger": {
+      "title": "Finger labyrinths for meditation at home",
+      "text": "The same winding path in miniature: trace it with a finger, eyes closed. If you would like one, get in touch.",
+      "cta": "Contact us if you want one"
+    },
+    "invite": {
+      "kicker": "Invitation",
+      "title": "Let’s build labyrinths",
+      "lines": [
+        "In public spaces",
+        "Accessible to all",
+        "For wellbeing, relaxation, reflection and creativity"
+      ],
+      "cta": "Get in touch"
+    },
+    "sources": "Sources: BBC Travel, The Labyrinth Society, WebMD, St. Joseph’s Health Care. Data: Labyrinth Walk Questionnaire (Rhodes, 2019)."
+  },
+  "Journal": {
+    "label": "A 21-day journal",
+    "title": "Sit Spot Journal",
+    "subtitle": "The Practice of Returning",
+    "lead": "What if, for 21 days, you had a date with yourself?",
+    "list": [
+      "Not with your phone.",
+      "Not with the rush.",
+      "Not with everything you “have” to do."
+    ],
+    "paragraphs": [
+      "Just you, a spot in nature, and a few minutes to observe, breathe, feel, and write.",
+      "“Sit Spot or The Practice of Returning” is more than just a journal. It is an invitation for the one who feels that, amidst all errands run for others, it might be time to take a journey one toward oneself.",
+      "For 21 days, you return to the same spot with a bit of nature – under a tree, in a corner of a garden, along a path – and begin to notice things you may have passed by hundreds of times before without ever seeing. You write. You sketch. You wonder. Sometimes, perhaps, you write nothing at all. And that is perfectly fine.",
+      "Because the goal is not to fill up pages."
+    ],
+    "emphasis": "The goal is simply to be there.",
+    "closing": [
+      "This journal was born from a desire to bring a bit of the forest’s tranquility into the city – into everyone’s own backyard – so that you might experience a return to nature, to simplicity, to presence, and, perhaps most importantly, a return to yourself.",
+      "Because sometimes, we don’t need yet another answer. We need a little bit of stillness to hear the answer that was already within us."
+    ],
+    "cta": "Get in touch for details"
+  },
+  "Services": {
+    "label": "SERVICES",
+    "title": "How we can work together",
+    "intro": "Every person and every place has its own rhythm. Tell us what you have in mind and we will build it together.",
+    "cards": {
+      "oneOnOne": {
+        "type": "Individual",
+        "title": "1-on-1 forest bathing",
+        "description": "1-on-1 forest bathing sessions — either on the Walden Trail in Târsa or at another mutually agreed-upon location."
+      },
+      "group": {
+        "type": "Groups",
+        "title": "Group facilitation",
+        "description": "Group facilitation for retreats, team-building events or parent-child camps organized by partners; I bring a pop-up labyrinth for meditative walks, along with nature-inspired group activities for both adults and children (such as creating “journey sticks,” “find my tree” exercise and many more)."
+      },
+      "consulting": {
+        "type": "Consultancy",
+        "title": "Trails and labyrinths for you",
+        "description": "Consultancy for designing your own healing nature trail tailored to your specific forest, creating a private labyrinth for your garden, developing community labyrinths or implementing any other initiative that brings the experience of nature closer to people."
+      },
+      "speaker": {
+        "type": "Events",
+        "title": "Speaker at events",
+        "description": "Speaking at events focused on alternative education, nature-based education, rural communities, building with hemp and shinrin-yoku, healing in nature."
+      }
+    },
+    "cta": "Get in touch"
   }
 }

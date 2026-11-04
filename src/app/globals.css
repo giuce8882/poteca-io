@@ -51,7 +51,7 @@
   --text-body-lg: clamp(1.25rem, 2vw, 1.5rem);
   --text-body: 1.125rem;
   --text-small: 0.95rem;
-  --text-label: 0.85rem;
+  --text-label: 0.875rem;
 }
 
 :root {

@@ -1,11 +1,12 @@
 {
   "Nav": {
     "story": "Povestea",
-    "healingTrail": "Poteca Vindecătoare",
-    "benefits": "Beneficii",
-    "experiences": "Experiențe",
-    "contact": "Contact",
-    "gallery": "Galerie"
+    "healingTrail": "Poteca Vindecătoare Walden",
+    "labyrinth": "Labirintul",
+    "journal": "Practica Întoarcerii",
+    "services": "Servicii",
+    "gallery": "Galerie",
+    "contact": "Contact"
   },
   "Hero": {
     "label": "Traseu de Vindecare prin Natură",
@@ -22,7 +23,7 @@
     "body2": "Motto-ul care m-a însoțit în fiecare poveste a fost mereu același: \"Nu merge unde te duce calea, mergi pe unde nu există cale și lasă în urmā o potecă.\"",
     "body3": "Și asta am făcut. Am lăsat poteci în domenii despre care ‘lumea’ spunea că sunt imposibile sau o nebunie- prima fabrică de procesare a semințelor de cânepă din Europa, cultivare si procesare fibre cânepā pentru industria auto, case din cânepă și var, grădiniță în pădure, școală liberă democratică.",
     "body4": "Turism, real-estate, industrie alimentară, educație alternativă, construcții naturale, fiecare experiență a constituit o nouă potecă. Și abia acum, după 20 de ani, am realizat că toate aceste poteci formează, de fapt, una singură. E viața mea.",
-    "body5": "Astăzi, îmi doresc să împărtăşesc tot ce am acumulat, în calitate de ghid certificat Healing Nature Guide, pe potecile vindecătoare de la Târsa, în inima platoului Luncanilor.",
+    "body5": "Astăzi doresc să împărtășesc tot ceea ce am trăit și învățat, în calitate de ghid certificat în terapia prin natură, călăuzind cu blândețe sesiuni de forest bathing pe potecile din Târsa, precum și în rolul de facilitator pentru meditații în labirint, sesiuni de forest bathing sau activități de tip „școală în pădure” pentru copii, în cadrul diverselor retreat-uri, festivaluri sau evenimente de team-building organizate de companii.",
     "quote": "Poteca sunt de fapt eu",
     "watchStory": "Vezi povestea"
   },
@@ -52,7 +53,8 @@
         "title": "Podețe și Treceri",
         "description": "Simboluri ale tranziției, fiecare trecere te duce mai aproape de tine."
       }
-    }
+    },
+    "website": "Descoperă și potecawalden.ro"
   },
   "Benefits": {
     "label": "SHINRIN-YOKU TRANSYLVANIA",
@@ -78,31 +80,6 @@
       "clarity": {
         "title": "Claritate și concentrare",
         "description": "Doar 15 minute petrecute în natură îmbunătățesc claritatea mentală și capacitatea de concentrare."
-      }
-    }
-  },
-  "Experiences": {
-    "label": "EXPERIENȚE",
-    "title": "Alege-ți poteca",
-    "intro": "Fiecare experiență este diferită pentru că fiecare om este diferit. Nu există programe rigide, doar invitația de a fi prezent.",
-    "cards": {
-      "walks": {
-        "title": "Plimbări ghidate",
-        "type": "Individual sau grup",
-        "description": "O plimbare lentă, ghidată, pe Poteca Vindecătoare Walden, cu exerciții de conectare, respirație și introspecție. Durata și ritmul se adaptează grupului.",
-        "cta": "Sună pentru programare"
-      },
-      "online": {
-        "title": "INDIVIDUAL, DE ORIUNDE",
-        "type": "Călăuzire online",
-        "description": "Pentru cei care nu pot ajunge la Târsa, o plimbare ghidată, în format hibrid, eu în pădure, tu oriunde te-ai afla. Natura vindecătoare vine la tine.",
-        "cta": "Sună pentru programare"
-      },
-      "immersive": {
-        "title": "Zile la Târsa",
-        "type": "Experiență imersivă",
-        "description": "Te invit acasă la mine. Împreună cu Alex, Max și Ida, oferim un refugiu. Zile în care intri în altă lume. Viață la țară, plimbări, joacă cu copiii, mici treburi în grădină. Fără planificare, fără terapie structurată.\n\nLa întrebarea \"Ce calificare ai?\" — răspunsul este simplu: \"Viața.\"",
-        "cta": "Descoperă experiența"
       }
     }
   },
@@ -138,5 +115,224 @@
   "Meta": {
     "title": "Poteca.io — Forest Bathing Retreat & Nature Therapy Romania",
     "description": "Poteca Vindecătoare pe Platoul Luncanilor, Târsa. Terapie prin natură (Shinrin-Yoku Transylvania), reconectare profundă și experiențe imersive."
+  },
+  "Labyrinth": {
+    "label": "Meditație în mers",
+    "title": "Labirintul",
+    "subtitle": "Mersul vindecător pe o singură cale șerpuitoare",
+    "nightCaption": "Labirintul în lumină de lumânări",
+    "what": {
+      "title": "Ce este un labirint?",
+      "kicker": "Un instrument sacru străvechi",
+      "quote": "Există multe forme de labirinturi în întreaga lume. Unii oameni le folosesc ca instrument pentru rugăciune, meditație sau vindecare. Este un loc unde poți obține claritate asupra vieții tale.",
+      "cite": "The Labyrinth Society",
+      "intro": "Labirintul pentru starea de bine este o singură cale șerpuitoare care duce, fără greș, spre centru și înapoi. Fără fundături și căi greșite. Nu te poți rătăci.",
+      "vsLabyrinth": "Labirint",
+      "vsLabyrinthText": "O singură cale. Drum sigur spre centru și înapoi.",
+      "vsMaze": "Labirint de tip Maze",
+      "vsMazeText": "Multe căi, fundături și riscul de a te rătăci."
+    },
+    "history": {
+      "title": "O practică străveche",
+      "intro": "Labirintul a fost folosit de peste 4.000 de ani, apărând în multe culturi și pe toate continentele.",
+      "items": [
+        {
+          "title": "Modelul cretan",
+          "text": "O singură cale formând șapte cercuri concentrice în jurul centrului — cea mai cunoscută formă fiind labirintul din Knossos."
+        },
+        {
+          "title": "Modelul de la Chartres",
+          "text": "Unsprezece cercuri, devenit celebru, se găsește în catedrala franceză Chartres. În Evul Mediu, aproape 25% dintre catedrale aveau un labirint."
+        },
+        {
+          "title": "Labirinturi nordice din piatră",
+          "text": "Construite pe malurile Mării Baltice, folosind pietre naturale așezate în pământ."
+        },
+        {
+          "title": "Tohono O’odham",
+          "text": "„Omul în Labirint” — un model sacru din arta tribală nativ-americană."
+        }
+      ]
+    },
+    "why": {
+      "title": "De ce să parcurgi un labirint?",
+      "quote": "Labirintul este o cale sigură în vremuri nesigure.",
+      "cite": "Rev. Dr. Lauren Artress, fondatoarea Veriditas",
+      "text": "Mersul în labirint este o meditație în mișcare. Modelul te susține, în timp ce mintea se liniștește. Corpul și respirația intră în același ritm iar atenția revine, blând, în prezent."
+    },
+    "stats": {
+      "title": "Puterea vindecătoare a mersului",
+      "items": [
+        {
+          "value": "86%",
+          "label": "mai relaxați"
+        },
+        {
+          "value": "83%",
+          "label": "mai împăcați"
+        },
+        {
+          "value": "80%",
+          "label": "mai reflexivi"
+        },
+        {
+          "value": "78%",
+          "label": "mai centrați"
+        },
+        {
+          "value": "71%",
+          "label": "mai puțin stresați"
+        },
+        {
+          "value": "70%",
+          "label": "mai puțin anxioși"
+        }
+      ],
+      "note": "Efecte raportate dintr-un sondaj pe 1.250 de persoane care au parcurs un labirint.",
+      "quote": "Labirintul ne învață acceptarea drumului și a obstacolelor sale, să fim în flux cu tot ce este.",
+      "cite": "Sydney Labyrinth"
+    },
+    "effects": {
+      "title": "Ce se întâmplă în corp și în minte",
+      "body": {
+        "title": "În corp",
+        "items": [
+          "Respirație și ritm cardiac mai lente",
+          "Tensiune arterială mai scăzută",
+          "Nivel scăzut de cortizol (hormonul stresului)",
+          "Tensiune musculară și durere cronică ameliorate"
+        ]
+      },
+      "mind": {
+        "title": "În minte",
+        "items": [
+          "O stare calmă, meditativă",
+          "Anxietate și ruminație reduse",
+          "Claritate, creativitate și concentrare crescute",
+          "Compasiune de sine, conexiune, sens"
+        ]
+      }
+    },
+    "steps": {
+      "title": "Cum se parcurge un labirint",
+      "intro": "Trei etape simple, fără experiență necesară.",
+      "items": [
+        {
+          "n": "01",
+          "title": "Eliberează",
+          "text": "Intră încet. Lasă gândurile și așteptările să plece cu fiecare pas. Urmează cotiturile fără grabă."
+        },
+        {
+          "n": "02",
+          "title": "Primește",
+          "text": "Oprește-te în centru. Respiră. Stai cât dorești — este un loc pentru ascultare."
+        },
+        {
+          "n": "03",
+          "title": "Întoarce-te",
+          "text": "Mergi înapoi pe aceeași cale, purtând cu tine tihna și posibilele înțelegeri care au apărut."
+        }
+      ]
+    },
+    "still": {
+      "title": "Pentru cei cărora le e greu să stea nemișcați",
+      "quote": "Mulți oameni, ca mine, au „eșuat” la meditația statică. O meditație în mers produce aceeași conștientizare interioară.",
+      "cite": "Rev. Dr. Lauren Artress, Veriditas",
+      "text": "Corpul în mișcare îi oferă minții agitate ceva de făcut. Atenția se concentrează pe cărare, pe respirație, pe pași — iar starea meditativă apare de la sine.",
+      "videoCaption": "Labirintul mobil, adus la retreat-uri și team-building-uri"
+    },
+    "where": {
+      "title": "Unde putem construi un labirint",
+      "intro": "Labirinturile pot fi construite în piețe centrale, parcuri, clădiri de birouri, grădini urbane și colțuri liniștite de pădure.",
+      "items": [
+        {
+          "title": "În pădure",
+          "tag": "Sălbatic și liniștit",
+          "text": "Un companion perfect pentru forest bathing și timp petrecut în natură."
+        },
+        {
+          "title": "Spații urbane",
+          "tag": "Spații ale orașului",
+          "text": "Un mod tăcut de a te opri și de a te reașeza în mijlocul unei vieți agitate."
+        },
+        {
+          "title": "Labirinturi de grădină",
+          "tag": "Propriul tău petic de pământ",
+          "text": "Marcate cu pietre, sfoară sau pur și simplu tunse în iarbă."
+        },
+        {
+          "title": "Modelul de la Chartres",
+          "tag": "Curți interioare",
+          "text": "Designul medieval, care este încă parcurs ca un mini-pelerinaj la catedrala din Paris."
+        }
+      ]
+    },
+    "finger": {
+      "title": "Labirinturi de deget pentru meditație acasă",
+      "text": "Același drum șerpuit, la scară mică: îl urmărești cu degetul, cu ochii închiși. Dacă îți dorești unul, scrie-ne.",
+      "cta": "Contact dacă vrei unul"
+    },
+    "invite": {
+      "kicker": "Invitație",
+      "title": "Să construim labirinturi",
+      "lines": [
+        "În spații publice",
+        "Accesibile tuturor",
+        "Pentru stare de bine, relaxare, reflexie și creativitate"
+      ],
+      "cta": "Scrie-ne"
+    },
+    "sources": "Surse: BBC Travel, The Labyrinth Society, WebMD, St. Joseph’s Health Care. Date: Chestionarul Labyrinth Walk (Rhodes, 2019)."
+  },
+  "Journal": {
+    "label": "Jurnal de 21 de zile",
+    "title": "Practica Întoarcerii",
+    "subtitle": "Un jurnal pentru întâlnirea cu tine",
+    "lead": "Și dacă, pentru 21 de zile, ai avea o întâlnire cu tine?",
+    "list": [
+      "Nu cu telefonul.",
+      "Nu cu graba.",
+      "Nu cu tot ce „trebuie” să faci."
+    ],
+    "paragraphs": [
+      "Doar tu, un loc în natură și câteva minute în care să observi, să respiri, să simți și să scrii.",
+      "„Practica Întoarcerii” este mai mult decât un jurnal. Este o invitație creată pentru omul care simte că, printre atâtea drumuri făcute pentru ceilalți, ar fi timpul să facă unul și spre el însuși.",
+      "Timp de 21 de zile, revii în același loc – lângă un copac, într-un colț de grădină, pe o potecă – și începi să vezi lucruri pe lângă care poate ai trecut de sute de ori fără să le observi. Scrii. Schițezi. Te întrebi. Uneori poate nu scrii nimic. Și este perfect.",
+      "Pentru că scopul nu este să umpli niște pagini."
+    ],
+    "emphasis": "Scopul este să fii acolo.",
+    "closing": [
+      "Jurnalul s-a născut din dorința de a aduce o bucățică din liniștea pădurii la oraș, în curtea fiecăruia, pentru a experimenta întoarcerea la natură, la simplitate, la prezență și, poate cel mai important, întoarcerea la tine.",
+      "Pentru că uneori nu avem nevoie de încă un răspuns. Avem nevoie de puțină liniște ca să auzim răspunsul care era deja în noi."
+    ],
+    "cta": "Scrie-ne pentru detalii"
+  },
+  "Services": {
+    "label": "SERVICII",
+    "title": "Cum putem lucra împreună",
+    "intro": "Fiecare om și fiecare loc au ritmul lor. Spune-ne ce îți dorești și construim împreună.",
+    "cards": {
+      "oneOnOne": {
+        "type": "Individual",
+        "title": "Sesiuni 1-1 de shinrin-yoku",
+        "description": "Sesiuni 1-1 de shinrin-yoku, „baie în pădure”, fie pe Poteca Walden la Târsa, fie într-o altă locație agreată de comun acord."
+      },
+      "group": {
+        "type": "Grupuri",
+        "title": "Facilitare de grup",
+        "description": "Facilitare de grup la retreat-uri, teambuilding-uri sau tabere părinți & copii, organizate de parteneri, unde vin cu labirintul pop-up pentru meditația în labirint și activități de grup pentru adulți și copii, inspirate de natură (journey stick, find my tree etc.)."
+      },
+      "consulting": {
+        "type": "Consultanță",
+        "title": "Poteci și labirinturi pentru tine",
+        "description": "Consultanță pentru crearea propriei poteci vindecătoare adaptate spațiului tău, a propriului labirint în curte, labirinturi comunitare sau orice altă activitate care aduce experiența naturii mai aproape de oameni."
+      },
+      "speaker": {
+        "type": "Evenimente",
+        "title": "Speaker la evenimente",
+        "description": "Speaker la evenimente pe tema educației alternative, educației în natură, comunităților rurale, shinrin-yoku, vindecării în natură."
+      }
+    },
+    "cta": "Scrie-ne"
   }
 }

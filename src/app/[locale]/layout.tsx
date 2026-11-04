@@ -80,7 +80,7 @@ export default async function LocaleLayout({
   const locale = resolvedParams.locale;
 
   // Validate that the incoming `locale` parameter is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!(routing.locales as readonly string[]).includes(locale)) {
     notFound();
   }
 
