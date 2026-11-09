@@ -86,10 +86,14 @@ export function Hero() {
 
     let cancelled = false;
     let objectUrl: string | undefined;
+    const controller = new AbortController();
+    // The 48 MB download must not compete with the story video (YouTube) for bandwidth.
+    const stop = () => controller.abort();
+    window.addEventListener("poteca:story-video-open", stop, { once: true });
 
     (async () => {
       try {
-        const res = await fetch("/videos/hero-scroll.mp4");
+        const res = await fetch("/videos/hero-scroll.mp4", { signal: controller.signal });
         if (!res.ok) return;
         const blob = await res.blob();
         if (cancelled) return;
@@ -128,6 +132,8 @@ export function Hero() {
 
     return () => {
       cancelled = true;
+      controller.abort();
+      window.removeEventListener("poteca:story-video-open", stop);
       if (objectUrl) URL.revokeObjectURL(objectUrl);
     };
   }, [loaded]);

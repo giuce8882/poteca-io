@@ -13,6 +13,7 @@ export function VideoModal({ isOpen, onClose, videoId }: VideoModalProps) {
   // Prevent scrolling when modal is open
   useEffect(() => {
     if (isOpen) {
+      window.dispatchEvent(new Event("poteca:story-video-open"));
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
@@ -64,7 +65,7 @@ export function VideoModal({ isOpen, onClose, videoId }: VideoModalProps) {
             className="relative z-[105] w-full max-w-[450px] aspect-[9/16] shadow-2xl rounded-xl overflow-hidden bg-bg-deep"
           >
             <iframe
-              src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
+              src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`}
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
