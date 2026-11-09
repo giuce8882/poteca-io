@@ -46,7 +46,7 @@ export function HealingTrail() {
           variants={fadeUp}
           className="relative aspect-[4/5] w-full max-w-[520px] mx-auto lg:ml-auto rounded-lg overflow-hidden shadow-[0_28px_60px_-30px_rgba(8,14,9,0.8)]"
         >
-          <Image src="/images/gallery/oct-13.webp" alt="" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
+          <Image src="/images/oana/walden-trail.webp" alt="Autumn colours on the Walden trail" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover object-[60%_50%]" />
         </motion.div>
       </div>
     </section>

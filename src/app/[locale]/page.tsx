@@ -27,8 +27,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
         {/* Dynamic transition photo */}
         <ParallaxImage 
-          src="/images/gallery/forest_sun.jpg" 
-          alt="Sunlight falling through the forest on the Walden trail" 
+          src="/images/oana/story-break.webp" 
+          alt="Path covered in fallen leaves through the autumn forest" 
         />
         
         <HealingTrail />

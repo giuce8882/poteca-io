@@ -201,7 +201,7 @@ export function Labyrinth() {
           <p className={body}>{t("where.intro")}</p>
         </div>
         <motion.div initial="hidden" whileInView="visible" viewport={view} variants={fadeUp} className="relative aspect-[21/9] mb-14 overflow-hidden rounded-lg">
-          <Image src="/images/gallery/oct-10.webp" alt="" fill sizes="(min-width: 1240px) 1240px, 100vw" className="object-cover" />
+          <Image src="/images/oana/where-forest.webp" alt="" fill sizes="(min-width: 1240px) 1240px, 100vw" className="object-cover object-[50%_85%]" />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" viewport={view} variants={stagger} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {where.map((w) => (
