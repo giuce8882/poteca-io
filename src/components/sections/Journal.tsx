@@ -15,16 +15,11 @@ export function Journal() {
   return (
     <section id="journal" className="w-full bg-bg-cream text-text-dark py-32 overflow-hidden">
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-[45%_55%] gap-16 lg:gap-24 items-start">
-        {/* Photos */}
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={stagger} className="grid grid-cols-2 gap-4 lg:sticky lg:top-32">
-          <motion.div variants={fadeUp} className="relative col-span-2 aspect-[4/5] overflow-hidden rounded">
-            <Image src="/images/profile/profile-01.webp" alt={t("title")} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
-          </motion.div>
-          {[1, 3].map((n) => (
-            <motion.div key={n} variants={fadeUp} className={`relative aspect-square overflow-hidden rounded border-[6px] border-bg-cream shadow-[0_22px_44px_-22px_rgba(44,36,25,0.55)] -mt-14 ${n === 1 ? "-rotate-2 ml-2" : "rotate-2 mr-2"}`}>
-              <Image src={`/images/journal/journal-0${n}.webp`} alt="" fill sizes="(min-width: 1024px) 20vw, 50vw" className="object-cover" />
-            </motion.div>
-          ))}
+        {/* Photo */}
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeUp} className="lg:sticky lg:top-32">
+          <div className="relative aspect-square overflow-hidden rounded-lg shadow-[0_22px_44px_-22px_rgba(44,36,25,0.55)]">
+            <Image src="/images/journal/journal-03.webp" alt={t("title")} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
+          </div>
         </motion.div>
 
         {/* Text */}

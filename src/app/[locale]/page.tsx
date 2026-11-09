@@ -5,7 +5,6 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { Story } from "@/components/sections/Story";
 import { HealingTrail } from "@/components/sections/HealingTrail";
-import { Benefits } from "@/components/sections/Benefits";
 import { Labyrinth } from "@/components/sections/Labyrinth";
 import { Journal } from "@/components/sections/Journal";
 import { Services } from "@/components/sections/Services";
@@ -28,18 +27,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
         {/* Dynamic transition photo */}
         <ParallaxImage 
-          src="/images/parallax/kids-forest.jpg" 
-          alt="Kids playing in the forest on the Poteca Vindecătoare" 
+          src="/images/gallery/forest_sun.jpg" 
+          alt="Sunlight falling through the forest on the Walden trail" 
         />
         
         <HealingTrail />
-        
-        <ParallaxImage 
-          src="/images/parallax/flowers.jpg" 
-          alt="Colorful wildflowers collected on the Healing Trail" 
-        />
-        
-        <Benefits />
         
         <Labyrinth />
         <Journal />

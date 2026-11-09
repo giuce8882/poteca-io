@@ -3,121 +3,51 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { fadeUp, stagger } from "@/lib/motion";
 
 export function HealingTrail() {
   const t = useTranslations("HealingTrail");
 
-  const fadeUp = {
-    hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] as const } }
-  };
-
-  const staggerContainer = {
-    hidden: {},
-    visible: { transition: { staggerChildren: 0.15, delayChildren: 0.2 } }
-  };
-
-  const spaces = ["untangle", "labyrinth", "zen", "bridges"];
-
   return (
-    <section id="healing-trail" className="w-full bg-bg-deep py-32 overflow-hidden text-text-light">
-      <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
-        
-        {/* Header */}
+    <section id="healing-trail" className="w-full bg-bg-forest py-24 md:py-32 overflow-hidden text-text-light">
+      <div className="max-w-[1240px] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-20 items-center">
         <motion.div
-           initial="hidden"
-           whileInView="visible"
-           viewport={{ once: true, amount: 0.3 }}
-           variants={fadeUp}
-           className="max-w-[800px] mb-24"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={stagger}
         >
-          <span className="font-sans text-sm uppercase tracking-[0.18em] text-accent-gold mb-8 block">
+          <motion.span variants={fadeUp} className="font-sans text-sm uppercase tracking-[0.18em] text-accent-gold mb-8 block">
             {t("label")}
-          </span>
-          <h2 className="font-display text-h1 text-text-light leading-[1.1] mb-10 pb-6 border-b border-text-light/10 max-w-max">
+          </motion.span>
+          <motion.h2 variants={fadeUp} className="font-display text-h1 text-text-light leading-[1.1] mb-10 pb-6 border-b border-text-light/20 max-w-max">
             {t("title")}
-          </h2>
-          <div className="flex flex-col gap-6 font-serif text-body-lg text-text-light leading-relaxed">
+          </motion.h2>
+          <motion.div variants={fadeUp} className="flex flex-col gap-6 font-serif text-body-lg text-text-light leading-[1.75]">
             <p>{t("body1")}</p>
             <p>{t("body2")}</p>
             <p>{t("body3")}</p>
-          </div>
-          <a
+          </motion.div>
+          <motion.a
+            variants={fadeUp}
             href="https://www.potecawalden.ro"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-10 inline-flex items-center gap-3 font-sans text-sm uppercase tracking-[0.18em] text-accent-gold border-b border-accent-gold/60 pb-1 hover:text-text-light hover:border-text-light transition-colors duration-300"
           >
             {t("website")} <span aria-hidden>↗</span>
-          </a>
+          </motion.a>
         </motion.div>
 
-        {/* Spaces Subtitle */}
-        <motion.h3 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeUp}
-          className="font-display text-h2 text-accent-gold mb-12"
-        >
-          {t("subtitle")}
-        </motion.h3>
-
-        {/* Cards Grid */}
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={staggerContainer}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
-        >
-          {spaces.map((space) => (
-            <motion.div 
-              key={space}
-              variants={{
-                hidden: { opacity: 0, scale: 0.92, y: 40 },
-                visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] } }
-              }}
-              whileHover={{ scale: 1.01 }}
-              className="group p-10 lg:p-12 bg-white/[0.03] backdrop-blur-md border border-accent-gold/10 hover:border-accent-gold transition-all duration-500 rounded flex flex-col justify-center"
-            >
-              <h4 className="font-display text-h3 text-text-light mb-4 group-hover:text-accent-gold transition-colors duration-500">
-                {t(`spaces.${space}.title`)}
-              </h4>
-              <p className="font-serif text-body text-text-light leading-relaxed">
-                {t(`spaces.${space}.description`)}
-              </p>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Guides Section */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeUp}
-          className="mt-32 pt-20 border-t border-text-light/10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+          className="relative aspect-[4/5] w-full max-w-[520px] mx-auto lg:ml-auto rounded-lg overflow-hidden shadow-[0_28px_60px_-30px_rgba(8,14,9,0.8)]"
         >
-          <div className="relative aspect-[3/4] w-full max-w-[450px] mx-auto rounded-sm overflow-hidden filter saturate-[0.85] contrast-[1.05]">
-            <Image 
-              src="/images/guides.jpg" 
-              alt="Oana and Cosmin" 
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-          <div className="flex flex-col justify-center">
-            <h3 className="font-display text-h2 text-accent-gold mb-6">
-              {t("guidesTitle")}
-            </h3>
-            <p className="font-serif text-body-lg text-text-light leading-relaxed">
-              {t("guidesText")}
-            </p>
-          </div>
+          <Image src="/images/gallery/oct-13.webp" alt="" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
         </motion.div>
-
       </div>
     </section>
   );

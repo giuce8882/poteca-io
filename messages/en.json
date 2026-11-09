@@ -1,7 +1,7 @@
 {
   "Nav": {
     "story": "The Story",
-    "healingTrail": "Walden Healing Nature Trail",
+    "healingTrail": "Walden Trail",
     "labyrinth": "Labyrinth",
     "journal": "Sit Spot Journal",
     "services": "Services",
@@ -23,7 +23,7 @@
   "Story": {
     "label": "About me",
     "title": "",
-    "body1": "My name is Oana, I am a mother of two “free range” boys, ages 7 and 10, and for over 20 years I have been dancing with the energy of entrepreneurship.",
+    "body1": "My name is Oana, I am a mother of two “free range” boys and for over 20 years I have been dancing with the energy of entrepreneurship.",
     "body2": "The motto that accompanied me every step along the way has always been the same: \"Don't go where the path may lead, go where there is no path and leave a trail\"",
     "body3": "And that's what I did. I left trails in areas that 'the world' said were impossible or crazy - the first hemp seed processing factory in Europe, cultivation and processing of hemp fibers for the automotive industry, houses made of hemp and lime, a kindergarten in the forest, a democratic free school.",
     "body4": "Tourism, real estate, food industry, alternative education, natural constructions, each experience generated a new trail. And only now, after 20 years, have I realised that all these trails actually form a single one, my life.",
@@ -32,60 +32,12 @@
     "watchStory": "Watch story"
   },
   "HealingTrail": {
-    "label": "Walden Healing Nature Trail",
+    "label": "Walden Trail",
     "title": "A journey toward yourself",
     "body1": "The Healing Trail is more than a path through nature, it is a living metaphor for the inner journey.",
     "body2": "Its design is based on interdisciplinary studies, every step on the trail becomes an invitation toward deep connection with yourself through nature. Grounding through the direct contact of your soles with the earth, the experience of touching and listening to flowing water, breathing exercises in the silence of the forest, spaces designed for reflection and introspection.",
     "body3": "And at the decision forks, the trail offers you the choice of unmarked paths, a symbol of adventure, of embracing the unknown, of fresh new perspectives.",
-    "subtitle": "Healing spaces along the trail",
-    "guidesTitle": "Your guides on the trail Oana şi Cosmin",
-    "guidesText": "We work as a team. For groups or a guided experience in masculine energy, the father of the Walden trail, Cosmin, is also with us.",
-    "spaces": {
-      "untangle": {
-        "title": "Zen Untangle",
-        "description": "A place for untangling thoughts, where the mind grows quiet and the tangled threads of the day come undone in silence."
-      },
-      "labyrinth": {
-        "title": "Tree of Life Labyrinth",
-        "description": "A walking meditation you follow the winding path and let yourself guided towards inner peace and clarity."
-      },
-      "zen": {
-        "title": "Zen Garden",
-        "description": "The contemplative garden, a space of deep stillness where you draw your story and nature becomes a mirror."
-      },
-      "bridges": {
-        "title": "Bridges & Crossings",
-        "description": "Symbols of transition, each crossing brings you closer to your inner self."
-      }
-    },
     "website": "Discover potecawalden.ro"
-  },
-  "Benefits": {
-    "label": "SHINRIN-YOKU TRANSYLVANIA",
-    "title": "The science behind the forest",
-    "intro": "Forest bathing (Shinrin-Yoku) is not just a beautiful Japanese tradition — it is supported by rigorous scientific research. Here's what happens when you step into the forest:",
-    "items": {
-      "health": {
-        "title": "Physical health",
-        "description": "Lowers blood pressure, improves metabolism and cardiovascular function."
-      },
-      "immune": {
-        "title": "Stronger Immune System",
-        "description": "NK (natural killer) cells, which fight viral infections and cancer cells, increase up to 50% after a session in the forest"
-      },
-      "mental": {
-        "title": "Mental and emotional health",
-        "description": "Reduces cortisol levels, anger, anxiety, and depression — measurable effects from the very first visit."
-      },
-      "sleep": {
-        "title": "Sleep quality",
-        "description": "Terpenes from conifers calm the mind and help combat insomnia naturally."
-      },
-      "clarity": {
-        "title": "Clarity and focus",
-        "description": "Just 15 minutes spent in nature significantly improve mental clarity and the ability to concentrate."
-      }
-    }
   },
   "Gallery": {
     "label": "GALLERY",
@@ -276,7 +228,7 @@
     "finger": {
       "title": "Finger labyrinths for meditation at home",
       "text": "The same winding path in miniature: trace it with a finger, eyes closed. If you would like one, get in touch.",
-      "cta": "Contact us if you want one"
+      "cta": "Contact me if you want one"
     },
     "invite": {
       "kicker": "Invitation",
@@ -317,7 +269,7 @@
   "Services": {
     "label": "SERVICES",
     "title": "How we can work together",
-    "intro": "Every person and every place has its own rhythm. Tell us what you have in mind and we will build it together.",
+    "intro": "Every person and every place has its own rhythm. Tell me what you have in mind and we will build it together.",
     "cards": {
       "oneOnOne": {
         "type": "Individual",

@@ -1,7 +1,7 @@
 {
   "Nav": {
     "story": "Povestea",
-    "healingTrail": "Poteca Vindecătoare Walden",
+    "healingTrail": "Poteca Walden",
     "labyrinth": "Labirintul",
     "journal": "Practica Întoarcerii",
     "services": "Servicii",
@@ -23,7 +23,7 @@
   "Story": {
     "label": "Despre mine",
     "title": "",
-    "body1": "Numele meu este Oana, sunt mamă a doi băieți “free range” de 7 și 10 ani si de peste 20 de ani m-am lăsat purtată de energia antreprenoriatului .",
+    "body1": "Numele meu este Oana, sunt mamă a doi băieți “free range” și de peste 20 de ani m-am lăsat purtată de energia antreprenoriatului.",
     "body2": "Motto-ul care m-a însoțit în fiecare poveste a fost mereu același: \"Nu merge unde te duce calea, mergi pe unde nu există cale și lasă în urmā o potecă.\"",
     "body3": "Și asta am făcut. Am lăsat poteci în domenii despre care ‘lumea’ spunea că sunt imposibile sau o nebunie- prima fabrică de procesare a semințelor de cânepă din Europa, cultivare si procesare fibre cânepā pentru industria auto, case din cânepă și var, grădiniță în pădure, școală liberă democratică.",
     "body4": "Turism, real-estate, industrie alimentară, educație alternativă, construcții naturale, fiecare experiență a constituit o nouă potecă. Și abia acum, după 20 de ani, am realizat că toate aceste poteci formează, de fapt, una singură. E viața mea.",
@@ -32,60 +32,12 @@
     "watchStory": "Vezi povestea"
   },
   "HealingTrail": {
-    "label": "POTECA VINDECĂTOARE WALDEN",
+    "label": "POTECA WALDEN",
     "title": "O călătorie spre tine",
     "body1": "Poteca de la Târsa este mai mult decât o plimbare prin natură, este o metaforă vie a călătoriei interioare.",
     "body2": "Proiectată pe baza unor studii interdisciplinare, fiecare pas pe potecă devine o invitație: la reconectare profundă cu sinele, cu ajutorul naturii. Împământare prin contactul direct al tălpilor cu pământul. Experiența atingerii și ascultării apei curgătoare. Exerciții de respirație în liniștea pădurii. Spații construite pentru reflecție și introspecție.",
     "body3": "Iar la intersecții, poteca îți oferă alegerea unor trasee nemarcate, un simbol al aventurii, al asumării necunoscutului, al perspectivelor mereu noi.",
-    "subtitle": "Spații de vindecare pe potecă",
-    "guidesTitle": "Călăuzele potecii Oana şi Cosmin",
-    "guidesText": "Lucrăm în echipă. Pentru grupuri sau o experiența ghidată în energie masculină ne este alături și tatăl potecii Walden, Cosmin",
-    "spaces": {
-      "untangle": {
-        "title": "Zen Untangle",
-        "description": "Un loc pentru descâlcirea gândurilor, unde mintea se liniștește și ițele zilei se desfac în tăcere."
-      },
-      "labyrinth": {
-        "title": "Labirintul “Copacul Vieții”",
-        "description": "O meditație în mișcare urmezi calea unduită și te lași purtat spre linişte și claritate"
-      },
-      "zen": {
-        "title": "Grădina Zen",
-        "description": "Grădina contemplativă, un spațiu de nemișcare profundă în care îți desenezi povestea și natura devine oglindă."
-      },
-      "bridges": {
-        "title": "Podețe și Treceri",
-        "description": "Simboluri ale tranziției, fiecare trecere te duce mai aproape de tine."
-      }
-    },
     "website": "Descoperă și potecawalden.ro"
-  },
-  "Benefits": {
-    "label": "SHINRIN-YOKU TRANSYLVANIA",
-    "title": "Știința din spatele pădurii",
-    "intro": "Băile de pădure (Shinrin-Yoku) nu sunt doar o tradiție japoneză — sunt susținute de cercetări științifice riguroase. Iată ce se întâmplă când pășești în pădure:",
-    "items": {
-      "health": {
-        "title": "Sănătate fizică",
-        "description": "Scade tensiunea arterială, îmbunătățește metabolismul și funcțiile cardiovasculare."
-      },
-      "immune": {
-        "title": "Sistem imunitar puternic",
-        "description": "Stimulează semnificativ sistemul imunitar prin creșterea numărului și activității celulelor ucigașe naturale (NK), care combat cancerul și infecțiile virale, cu aproximativ 50%"
-      },
-      "mental": {
-        "title": "Sănătate mentală și emoțională",
-        "description": "Reduce nivelul de cortizol, furia, anxietatea și depresia — efecte măsurabile de la prima vizită."
-      },
-      "sleep": {
-        "title": "Calitatea somnului",
-        "description": "Terpenele din conifere liniștesc mintea și ajută natural la combaterea insomniei."
-      },
-      "clarity": {
-        "title": "Claritate și concentrare",
-        "description": "Doar 15 minute petrecute în natură îmbunătățesc claritatea mentală și capacitatea de concentrare."
-      }
-    }
   },
   "Gallery": {
     "label": "GALERIE",
@@ -274,8 +226,8 @@
       ]
     },
     "finger": {
-      "title": "Labirinturi de deget pentru meditație acasă",
-      "text": "Același drum șerpuit, la scară mică: îl urmărești cu degetul, cu ochii închiși. Dacă îți dorești unul, scrie-ne.",
+      "title": "Labirinturi pentru meditația acasă",
+      "text": "Același drum șerpuit, la scară mică: îl urmărești cu degetul, cu ochii închiși. Dacă îți dorești unul, scrie-mi.",
       "cta": "Contact dacă vrei unul"
     },
     "invite": {
@@ -286,7 +238,7 @@
         "Accesibile tuturor",
         "Pentru stare de bine, relaxare, reflexie și creativitate"
       ],
-      "cta": "Scrie-ne",
+      "cta": "Scrie-mi",
       "contactLabel": "Contact: Oana Suciu"
     },
     "sources": "Surse: BBC Travel, The Labyrinth Society, WebMD, St. Joseph’s Health Care. Date: Chestionarul Labyrinth Walk (Rhodes, 2019)."
@@ -312,12 +264,12 @@
       "Jurnalul s-a născut din dorința de a aduce o bucățică din liniștea pădurii la oraș, în curtea fiecăruia, pentru a experimenta întoarcerea la natură, la simplitate, la prezență și, poate cel mai important, întoarcerea la tine.",
       "Pentru că uneori nu avem nevoie de încă un răspuns. Avem nevoie de puțină liniște ca să auzim răspunsul care era deja în noi."
     ],
-    "cta": "Scrie-ne pentru detalii"
+    "cta": "Scrie-mi pentru detalii"
   },
   "Services": {
     "label": "SERVICII",
     "title": "Cum putem lucra împreună",
-    "intro": "Fiecare om și fiecare loc au ritmul lor. Spune-ne ce îți dorești și construim împreună.",
+    "intro": "Fiecare om și fiecare loc au ritmul lor. Spune-mi ce îți dorești și construim împreună.",
     "cards": {
       "oneOnOne": {
         "type": "Individual",
@@ -340,6 +292,6 @@
         "description": "Speaker la evenimente pe tema educației alternative, educației în natură, comunităților rurale, shinrin-yoku, vindecării în natură."
       }
     },
-    "cta": "Scrie-ne"
+    "cta": "Scrie-mi"
   }
 }
