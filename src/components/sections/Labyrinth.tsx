@@ -18,6 +18,14 @@ const tones: Record<Tone, string> = {
   cream: "bg-bg-cream [--bg:var(--color-bg-cream)] [--fg:var(--color-text-dark)] [--accent:var(--color-green-deep)] [--soft:var(--color-text-medium)]",
 };
 
+// One image per history item, in message order: Cretan, Chartres, Nordic stone, Tohono O’odham (no free-licence diagram yet).
+const historyImages: (string | null)[] = [
+  "/images/labyrinth/diagrams/cretan.svg",
+  "/images/labyrinth/diagrams/chartres.svg",
+  "/images/labyrinth/diagrams/nordic.png",
+  null,
+];
+
 const label = "font-sans text-sm uppercase tracking-[0.18em] text-(--accent)";
 const card = "p-8 rounded-lg border border-(--accent)/25 bg-(--fg)/5";
 const body = "font-body text-body text-(--fg) leading-[1.75]";
@@ -95,10 +103,16 @@ export function Labyrinth() {
           <div className="lg:sticky lg:top-32 h-fit max-w-[460px]">
             <h3 className="font-display text-h2 mb-6">{t("history.title")}</h3>
             <p className={body}>{t("history.intro")}</p>
+            <p className="mt-8 font-sans text-sm text-(--soft)">{t("history.credit")}</p>
           </div>
           <motion.ul initial="hidden" whileInView="visible" viewport={view} variants={stagger}>
-            {history.map((h) => (
-              <motion.li key={h.title} variants={fadeUp} className="grid sm:grid-cols-[220px_1fr] gap-3 sm:gap-8 border-t border-(--accent)/30 py-8 first:border-t-0 first:pt-0">
+            {history.map((h, i) => (
+              <motion.li key={h.title} variants={fadeUp} className="grid sm:grid-cols-[112px_170px_1fr] gap-4 sm:gap-8 items-start border-t border-(--accent)/30 py-8 first:border-t-0 first:pt-0">
+                <div className="h-[112px] w-[112px]">
+                  {historyImages[i] && (
+                    <Image src={historyImages[i]} alt="" width={112} height={112} unoptimized className="h-full w-full object-contain mix-blend-multiply" />
+                  )}
+                </div>
                 <h4 className="font-display text-h3 text-(--accent)">{h.title}</h4>
                 <p className={body}>{h.text}</p>
               </motion.li>
